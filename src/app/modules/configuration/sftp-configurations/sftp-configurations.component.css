@@ -1,0 +1,50 @@
+.browseFileInty {
+  padding-top: 3px;
+  padding-left: 2px;
+}
+
+svg {
+  max-width: 100%;
+  height: auto;
+  max-height: 100%;
+}
+
+.sftpConfig .dataSourceTable th {
+  font-size: 0.8rem;
+  padding: 0.7rem;
+}
+
+.sftpConfig .form-control, .sftpConfig .input-group-text, .sftpConfig .btn {
+  border-radius: 0;
+}
+
+.sftpConfig .input-group-text {
+  background: none;
+  border: none;
+}
+
+.sftpConfig .col, .sftpConfig .col-1, .sftpConfig .col-10, .sftpConfig .col-11, .sftpConfig .col-12, .sftpConfig .col-2, .sftpConfig .col-3, .sftpConfig .col-4, .sftpConfig .col-5, .sftpConfig .col-6, .sftpConfig .col-7, .sftpConfig .col-8, .sftpConfig .col-9, .sftpConfig .col-auto, .sftpConfig .col-lg, .sftpConfig .col-lg-1, .sftpConfig .col-lg-10, .sftpConfig .col-lg-11, .sftpConfig .col-lg-12, .sftpConfig .col-lg-2, .sftpConfig .col-lg-3, .sftpConfig .col-lg-4, .sftpConfig .col-lg-5, .sftpConfig .col-lg-6, .sftpConfig .col-lg-7, .sftpConfig .col-lg-8, .sftpConfig .col-lg-9, .sftpConfig .col-lg-auto, .sftpConfig .col-md, .sftpConfig .col-md-1, .sftpConfig .col-md-10, .sftpConfig .col-md-11, .sftpConfig .col-md-12, .sftpConfig .col-md-2, .sftpConfig .col-md-3, .sftpConfig .col-md-4, .sftpConfig .col-md-5, .sftpConfig .col-md-6, .sftpConfig .col-md-7, .sftpConfig .col-md-8, .sftpConfig .col-md-9, .sftpConfig .col-md-auto, .sftpConfig .col-sm, .sftpConfig .col-sm-1, .sftpConfig .col-sm-10, .sftpConfig .col-sm-11, .sftpConfig .col-sm-12, .sftpConfig .col-sm-2, .sftpConfig .col-sm-3, .sftpConfig .col-sm-4, .sftpConfig .col-sm-5, .sftpConfig .col-sm-6, .sftpConfig .col-sm-7, .sftpConfig .col-sm-8, .sftpConfig .col-sm-9, .sftpConfig .col-sm-auto, .sftpConfig .col-xl, .sftpConfig .col-xl-1, .sftpConfig .col-xl-10, .sftpConfig .col-xl-11, .sftpConfig .col-xl-12, .sftpConfig .col-xl-2, .sftpConfig .col-xl-3, .sftpConfig .col-xl-4, .sftpConfig .col-xl-5, .sftpConfig .col-xl-6, .sftpConfig .col-xl-7, .sftpConfig .col-xl-8, .sftpConfig .col-xl-9, .sftpConfig .col-xl-auto {
+  padding-left: 7.5px;
+  padding-right: 7.5px;
+}
+
+.sftpConfig .icoStyle {
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  margin-top: -9px;
+}
+
+.sftpConfig .icoStyle svg {
+  width: 20px;
+  height: 20px;
+}
+
+.sftpConfig .icoStyle .editIco {
+  fill: #005b92;
+}
+
+.sftpConfig .icoStyle .deltIco {
+  fill: #e5202e;
+}
+/*# sourceMappingURL=sftp-configurations.component.css.map */

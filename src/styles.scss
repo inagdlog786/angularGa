@@ -1,1 +1,37 @@
 /* You can add global styles to this file, and also import other style files */
+/* You can add global styles to this file, and also import other style files */
+// _base.sass
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap');
+$body-font: 'Fira Sans', sans-serif;
+$input-font-color:#353535;
+$body-text-color:#000;
+$tab-active:#000;
+
+body{
+  font: $body-font;
+  color: $body-text-color;
+}
+
+.tabStyling {
+    .tab-content{
+      padding: 1.6rem 0;
+    }
+    .nav-tabs {
+        border: none;
+        margin-top: -47px;
+    }
+    .nav-item{
+        .nav-link{
+                border: none;
+                padding:10px 8px;
+            &.active{
+            border-bottom: 2px $tab-active solid;
+            background: none;
+            }
+        }
+    }
+}
+    
+        
+            
+                
