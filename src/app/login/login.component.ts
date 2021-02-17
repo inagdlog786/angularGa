@@ -7,6 +7,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LoginComponent implements OnInit {
 
+  fieldTextType!: boolean;
+  toggleFieldTextType() {
+    this.fieldTextType = !this.fieldTextType;
+  }
+  
   constructor() { }
 
   ngOnInit(): void {

@@ -7,13 +7,15 @@ import { LoginComponent } from './login/login.component';
 import { HeaderComponent } from './commons/header/header.component';
 import { PageFooterComponent } from './commons/page-footer/page-footer.component';
 import { ConfigurationModule } from './modules/configuration/configuration.module';
+import { PreLoginHeaderComponent } from './commons/pre-login-header/pre-login-header.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
     HeaderComponent,
-    PageFooterComponent
+    PageFooterComponent,
+    PreLoginHeaderComponent
   ],
   imports: [
     BrowserModule,

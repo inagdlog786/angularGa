@@ -1,1 +1,31 @@
-<p>login works!</p>
+<div class="container-fluid px-0">
+    <div class="row no-gutters min-vh-100 bg-primary">
+        <div class="col-md-7"></div>
+        <div class="col-md-5 d-flex align-items-center bg-light">
+            <form class="m-auto col-md-8">  
+                <div class="form-group">
+                  <label for="exampleInputEmail1">Email address</label>
+                  <label for="userPassword" class="form-label float-right text-danger"><b>*</b></label>
+                  <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
+                </div>
+                <div class="form-group">                  
+                    <label for="userPassword" class="form-label">Password</label>
+                    <label for="userPassword" class="form-label float-right" (click)="toggleFieldTextType()">
+                        <i class="fa fa-eye-slash pr-1"
+                            [ngClass]="{'fa-eye-slash': !fieldTextType, 'fa-eye': fieldTextType }"></i>
+                        <span *ngIf="!fieldTextType"> Show</span>
+                        <span *ngIf="fieldTextType">  Hide </span>
+                    </label>
+                    <div class="input-group mb-2 mr-sm-2">
+                        <input [type]="fieldTextType ? 'text' : 'password'" class="form-control" id="sftpPassword"  formControlName="sftpPassword" />
+                    </div>  
+                    <small><a href="#" class="btn-link">Forget your Password</a></small>
+                </div>
+                <button type="submit" class="btn btn-primary">Login</button>
+                <div class="form-group">
+                  <small>Don't have an account? <a href="#" class="btn-link">Create Account</a></small>
+                </div>
+              </form>
+        </div>
+    </div>
+</div>
