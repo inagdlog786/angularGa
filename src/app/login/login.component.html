@@ -10,7 +10,7 @@
                 </div>
                 <div class="form-group">                  
                     <label for="userPassword" class="form-label">Password</label>
-                    <label for="userPassword" class="form-label float-right" (click)="toggleFieldTextType()">
+                    <label for="userPassword" class="form-label float-right text-primary" (click)="toggleFieldTextType()">
                         <i class="fa fa-eye-slash pr-1"
                             [ngClass]="{'fa-eye-slash': !fieldTextType, 'fa-eye': fieldTextType }"></i>
                         <span *ngIf="!fieldTextType"> Show</span>
@@ -19,11 +19,11 @@
                     <div class="input-group mb-2 mr-sm-2">
                         <input [type]="fieldTextType ? 'text' : 'password'" class="form-control" id="sftpPassword"  formControlName="sftpPassword" />
                     </div>  
-                    <small><a href="#" class="btn-link">Forget your Password</a></small>
+                    <small><a href="#" class="btn-link">Forget your Password?</a></small>
                 </div>
-                <button type="submit" class="btn btn-primary">Login</button>
+                <button type="submit" class="btn btn-primary mb-3">Login</button>
                 <div class="form-group">
-                  <small>Don't have an account? <a href="#" class="btn-link">Create Account</a></small>
+                  <small>Don't have an account? <a href="#" class="btn-link ml-3">Create Account</a></small>
                 </div>
               </form>
         </div>
