@@ -8,6 +8,8 @@ import { HeaderComponent } from './commons/header/header.component';
 import { PageFooterComponent } from './commons/page-footer/page-footer.component';
 import { ConfigurationModule } from './modules/configuration/configuration.module';
 import { PreLoginHeaderComponent } from './commons/pre-login-header/pre-login-header.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
 
 @NgModule({
   declarations: [
@@ -18,6 +20,7 @@ import { PreLoginHeaderComponent } from './commons/pre-login-header/pre-login-he
     PreLoginHeaderComponent
   ],
   imports: [
+    BrowserAnimationsModule,
     BrowserModule,
     AppRoutingModule,
     ConfigurationModule

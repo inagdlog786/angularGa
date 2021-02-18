@@ -1,8 +1,8 @@
 <div class="container-fluid px-0">
     <div class="row no-gutters min-vh-100 bg-primary">
-        <div class="col-md-7"></div>
-        <div class="col-md-5 d-flex align-items-center bg-light">
-            <form class="m-auto col-md-8">  
+        <div class="col-md-6"></div>
+        <div class="col-md-6 d-flex align-items-center bg-light">
+            <form class="m-auto col-md-6">  
                 <div class="form-group">
                   <label for="exampleInputEmail1">Email address</label>
                   <label for="userPassword" class="form-label float-right text-danger"><b>*</b></label>
@@ -11,15 +11,15 @@
                 <div class="form-group">                  
                     <label for="userPassword" class="form-label">Password</label>
                     <label for="userPassword" class="form-label float-right text-primary" (click)="toggleFieldTextType()">
-                        <i class="fa fa-eye-slash pr-1"
-                            [ngClass]="{'fa-eye-slash': !fieldTextType, 'fa-eye': fieldTextType }"></i>
-                        <span *ngIf="!fieldTextType"> Show</span>
-                        <span *ngIf="fieldTextType">  Hide </span>
+                        <i class="fa0 fa-eye-slash0 pr-1 img-eye-slash"
+                            [ngClass]="{'img-eye-slash': !fieldTextType, 'img-eye': fieldTextType }"></i>
+                        <span *ngIf="!fieldTextType"><img src="../../assets/images/icons/eye.png" width="20px"> Show</span>
+                        <span *ngIf="fieldTextType"><img src="../../assets/images/icons/invisible.png" width="15px">   Hide </span>
                     </label>
                     <div class="input-group mb-2 mr-sm-2">
                         <input [type]="fieldTextType ? 'text' : 'password'" class="form-control" id="sftpPassword"  formControlName="sftpPassword" />
                     </div>  
-                    <small><a href="#" class="btn-link">Forget your Password?</a></small>
+                    <small><a href="#" class="btn-link">Forget your Passwordng?</a></small>
                 </div>
                 <button type="submit" class="btn btn-primary mb-3">Login</button>
                 <div class="form-group">
