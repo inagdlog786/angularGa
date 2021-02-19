@@ -10,9 +10,11 @@ import { TabsModule } from 'ngx-bootstrap/tabs';
 import { HttpClientModule } from '@angular/common/http';
 import { AngularSvgIconModule } from 'angular-svg-icon';
 import { DistributionConfigurationsComponent } from './distribution-configurations/distribution-configurations.component';
+import { AdminApplicationConfigurationsComponent } from './admin-application-configurations/admin-application-configurations.component';
 
 @NgModule({
-  declarations: [SftpConfigurationsComponent, TabLayoutComponent, DistributionConfigurationsComponent],
+  declarations: [SftpConfigurationsComponent, TabLayoutComponent, DistributionConfigurationsComponent,
+    AdminApplicationConfigurationsComponent],
   imports: [
     CommonModule,
     HttpClientModule,
