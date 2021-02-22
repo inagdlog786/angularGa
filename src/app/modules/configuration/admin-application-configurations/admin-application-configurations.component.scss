@@ -1,0 +1,27 @@
+$paramount-color:#007bff;
+.adminConfig{
+    input, select,button{border-radius: 0;}
+.outerAddlist{    
+    border: 1px solid #ced4da;
+    .scrollPanel{
+        overflow-y:scroll;
+        height: 130px;
+        &::-webkit-scrollbar {
+            width: 3px;
+        }
+        &::-webkit-scrollbar-track {
+            background: #f1f1f1; 
+        }
+        &::-webkit-scrollbar-thumb {
+            background: $paramount-color; 
+        }
+        &::-webkit-scrollbar-thumb:hover {
+            background: $paramount-color; 
+            cursor: pointer;
+        }
+        .list-group-item{
+            border: none;
+        }
+    }
+}
+}

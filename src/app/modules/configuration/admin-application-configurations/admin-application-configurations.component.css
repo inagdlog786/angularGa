@@ -1,0 +1,34 @@
+.adminConfig input, .adminConfig select, .adminConfig button {
+  border-radius: 0;
+}
+
+.adminConfig .outerAddlist {
+  border: 1px solid #ced4da;
+}
+
+.adminConfig .outerAddlist .scrollPanel {
+  overflow-y: scroll;
+  height: 130px;
+}
+
+.adminConfig .outerAddlist .scrollPanel::-webkit-scrollbar {
+  width: 3px;
+}
+
+.adminConfig .outerAddlist .scrollPanel::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+.adminConfig .outerAddlist .scrollPanel::-webkit-scrollbar-thumb {
+  background: #007bff;
+}
+
+.adminConfig .outerAddlist .scrollPanel::-webkit-scrollbar-thumb:hover {
+  background: #007bff;
+  cursor: pointer;
+}
+
+.adminConfig .outerAddlist .scrollPanel .list-group-item {
+  border: none;
+}
+/*# sourceMappingURL=admin-application-configurations.component.css.map */
