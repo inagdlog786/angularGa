@@ -6,9 +6,10 @@ $body-font: 'Fira Sans', sans-serif;
 $input-font-color:#353535;
 $body-text-color:#000;
 $tab-active:#000;
+$body-font-size:0.8rem;
 
 body{
-  font: $body-font;
+  font: $body-font-size $body-font normal;
   color: $body-text-color;
 }
 
