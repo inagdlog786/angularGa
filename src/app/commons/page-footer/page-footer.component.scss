@@ -6,4 +6,28 @@
         margin:0 5px;
         color: #333;
     }
+    .footerNav{
+        margin: 6px 0 0 0;
+        padding: 0;
+        li{
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: inline;
+        }
+    }
 }
+
+
+@media only screen and (max-width: 1199px) {
+    .footerNav {
+        margin-top: 0;
+    li {
+      display:block !important;
+      line-height: 24px;
+      a{
+        padding: 0 !important;
+      }
+    }
+}
+  }
