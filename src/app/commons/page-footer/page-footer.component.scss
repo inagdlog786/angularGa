@@ -1,9 +1,9 @@
 .footertxt{
     font-size: 0.9rem;
     a{
-        padding-left: 4px;
-        padding-right: 4px;
-        margin:0 5px;
+        padding-left: 2px;
+        padding-right: 2px;
+        margin:0 3px;
         color: #333;
     }
     .footerNav{
@@ -19,15 +19,29 @@
 }
 
 
-@media only screen and (max-width: 1199px) {
-    .footerNav {
-        margin-top: 0;
-    li {
-      display:block !important;
-      line-height: 24px;
-      a{
-        padding: 0 !important;
-      }
+@media only screen and (min-width: 1025px){
+    .footerLeft{
+        display: block !important ;
     }
 }
-  }
+
+@media only screen and (max-width: 1024px) {
+    .col-md-12.footerMenu,.col-md-12.footerCopy{
+        max-width: 100% !important;
+        flex: 0 0 100%;
+    }   
+    .text-md-left.footerCopy{
+        text-align: left !important;
+    }
+
+    .footerNav {
+        margin-top: 0;
+            li {
+            display:block !important;
+            line-height: 24px;
+                a{
+                    padding: 0 !important;
+                }
+        }
+    }
+}
