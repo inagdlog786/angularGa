@@ -11,7 +11,6 @@ export class LoginComponent implements OnInit {
   toggleFieldTextType() {
     this.fieldTextType = !this.fieldTextType;
   }
-  
   constructor() { }
 
   ngOnInit(): void {

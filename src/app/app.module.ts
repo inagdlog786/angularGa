@@ -9,6 +9,8 @@ import { PageFooterComponent } from './commons/page-footer/page-footer.component
 import { ConfigurationModule } from './modules/configuration/configuration.module';
 import { PreLoginHeaderComponent } from './commons/pre-login-header/pre-login-header.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { SetupNewpasswordComponent } from './setup-newpassword/setup-newpassword.component';
+import { EmailTemplateComponent } from './email-template/email-template.component';
 
 
 @NgModule({
@@ -17,7 +19,9 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     LoginComponent,
     HeaderComponent,
     PageFooterComponent,
-    PreLoginHeaderComponent
+    PreLoginHeaderComponent,
+    SetupNewpasswordComponent,
+    EmailTemplateComponent
   ],
   imports: [
     BrowserAnimationsModule,
