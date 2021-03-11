@@ -11,7 +11,8 @@ import { PreLoginHeaderComponent } from './commons/pre-login-header/pre-login-he
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { SetupNewpasswordComponent } from './setup-newpassword/setup-newpassword.component';
 import { EmailTemplateComponent } from './email-template/email-template.component';
-
+import { ShowHidePasswordModule } from 'ngx-show-hide-password';
+import { NewUserRegistrationComponent } from './new-user-registration/new-user-registration.component';
 
 @NgModule({
   declarations: [
@@ -21,13 +22,15 @@ import { EmailTemplateComponent } from './email-template/email-template.componen
     PageFooterComponent,
     PreLoginHeaderComponent,
     SetupNewpasswordComponent,
-    EmailTemplateComponent
+    EmailTemplateComponent,
+    NewUserRegistrationComponent
   ],
   imports: [
     BrowserAnimationsModule,
     BrowserModule,
     AppRoutingModule,
-    ConfigurationModule
+    ConfigurationModule,
+    ShowHidePasswordModule
   ],
   providers: [],
   bootstrap: [AppComponent]

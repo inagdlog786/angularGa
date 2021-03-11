@@ -8,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class SetupNewpasswordComponent implements OnInit {
   
   newPasswordType!: boolean;
-  reEnterPasswordType!: boolean;
+  reEnterPasswordType!: ConstrainBoolean;
 
   togglenewPassword() {
     this.newPasswordType = !this.newPasswordType;

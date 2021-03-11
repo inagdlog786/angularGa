@@ -1,0 +1,14 @@
+$lightblue:#1e7bcb;
+$darkblue:#0844a6;
+.user-registration{
+    height: calc(100vh-200px);
+    input,select,.btn{
+        border-radius: 0rem;
+    }
+    .freebg{
+        background: $lightblue;
+    }
+    .bestbg{
+        background: $darkblue;
+    }
+}
