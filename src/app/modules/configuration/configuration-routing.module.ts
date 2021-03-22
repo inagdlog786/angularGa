@@ -4,12 +4,14 @@ import { SftpConfigurationsComponent } from './sftp-configurations/sftp-configur
 import { TabLayoutComponent } from './tab-layout/tab-layout.component';
 import { DistributionConfigurationsComponent } from './distribution-configurations/distribution-configurations.component';
 import { AdminApplicationConfigurationsComponent } from './admin-application-configurations/admin-application-configurations.component';
+import { UserConfigurationsComponent } from './user-configurations/user-configurations.component';
 
 const routes: Routes = [  
   { path: 'sftp', component: SftpConfigurationsComponent },
   { path: 'configurations', component: TabLayoutComponent },
   { path: 'distribution', component: DistributionConfigurationsComponent },
-  { path: 'adminconfig', component:AdminApplicationConfigurationsComponent}
+  { path: 'adminconfig', component:AdminApplicationConfigurationsComponent},
+  { path: 'userconfigurations', component: UserConfigurationsComponent }
 ];
 
 @NgModule({
