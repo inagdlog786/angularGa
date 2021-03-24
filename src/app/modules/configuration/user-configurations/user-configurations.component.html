@@ -1,22 +1,23 @@
 <div class="userconfigurations-container">
 
-<form>
+<form [formGroup]="userconfig">
     <div class="form-row">
         <div class="form-group col-md-3">
           <label for="">User Name</label>
-          <input type="text" class="form-control" placeholder="Jhon">
+          <input type="text" class="form-control" formControlName="username" placeholder="Jhon">
         </div>
         <div class="form-group col-md-2">
-          <label for="">User Name</label>
-          <input type="email" class="form-control" placeholder="Jhon@gamil.com">
+          <label for="">Email</label>
+          <input type="email" class="form-control" formControlName="email" placeholder="Jhon@gamil.com">
         </div>
         <div class="form-group col-md-2">
           <label for="">Telephone</label>
-          <input type="tel" class="form-control" placeholder="+44 125478">
+          <input type="tel" class="form-control" formControlName="telephone" placeholder="+44 125478">
         </div>
         <div class="form-group col-md-2">
             <label for="feedType" class="form-label">User Role</label>
-            <ngx-bootstrap-multiselect [options]="myOptions" [(ngModel)]="optionsModel" name="userRole" (ngModelChange)="onChange()" class="form-control" ></ngx-bootstrap-multiselect>
+            <ngx-bootstrap-multiselect [options]="myOptions" [(ngModel)]="optionsModel" formControlName="userRole" (ngModelChange)="onChange()" [settings]="mySettings" class="form-control p-0" ></ngx-bootstrap-multiselect>
+
 
             <!-- <ngx-select [form-control]="selectControl"></ngx-select> -->
 

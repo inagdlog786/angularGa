@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { IMultiSelectOption, IMultiSelectSettings, IMultiSelectTexts } from 'ngx-bootstrap-multiselect';
-
+import { FormControl, FormGroup } from '@angular/forms';
 
 @Component({
   selector: 'app-user-configurations',
@@ -10,6 +10,15 @@ import { IMultiSelectOption, IMultiSelectSettings, IMultiSelectTexts } from 'ngx
 
 
 export class UserConfigurationsComponent implements OnInit {
+
+  constructor() { }
+
+  userconfig = new FormGroup({
+    username: new FormControl(''),
+    email: new FormControl(''),
+    telephone: new FormControl(''),
+    userRole: new FormControl('')
+  });
   
   optionsModel: number[] = [];
   myOptions: IMultiSelectOption[] = [
@@ -22,6 +31,14 @@ export class UserConfigurationsComponent implements OnInit {
     // { id: 7, name: 'Red', parentId: 5 },
     // { id: 8, name: 'White', parentId: 5 }
   ];
+
+  // Settings configuration
+  mySettings: IMultiSelectSettings = {
+    enableSearch: true,
+    buttonClasses: 'btn',
+    containerClasses:'d-block',
+    displayAllSelectedText: true
+  };
 
   ngOnInit() {
       this.myOptions = [

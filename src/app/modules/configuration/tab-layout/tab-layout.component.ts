@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { FormGroup, FormControl } from '@angular/forms';
 
 @Component({
   selector: 'app-tab-layout',
@@ -8,6 +9,11 @@ import { Component, OnInit } from '@angular/core';
 export class TabLayoutComponent implements OnInit {
 
   constructor() { }
+
+  allconfig = new FormGroup({
+    // username: new FormControl('')
+  });
+
 
   ngOnInit(): void {
   }

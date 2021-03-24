@@ -14,9 +14,10 @@ import { AdminApplicationConfigurationsComponent } from './admin-application-con
 import { UserConfigurationsComponent } from './user-configurations/user-configurations.component';
 
 import { NgxBootstrapMultiselectModule } from 'ngx-bootstrap-multiselect';
-import { FormsModule } from '@angular/forms'; 
+import { FormsModule, FormBuilder } from '@angular/forms'; 
 import { ReactiveFormsModule } from '@angular/forms';
 
+import { SelectDropDownModule } from 'ngx-select-dropdown'
 
 @NgModule({
   declarations: [SftpConfigurationsComponent, TabLayoutComponent, DistributionConfigurationsComponent,
@@ -29,6 +30,8 @@ import { ReactiveFormsModule } from '@angular/forms';
       ConfigurationRoutingModule,    
       TabsModule.forRoot(),  
       NgxBootstrapMultiselectModule ,
+
+      SelectDropDownModule,
       
       FormsModule,
       ReactiveFormsModule

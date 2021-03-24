@@ -27,6 +27,7 @@
     "ngx-bootstrap": "^6.2.0",
     "ngx-bootstrap-multiselect": "^2.1.1",
     "ngx-password-toggle": "^1.0.3",
+    "ngx-select-dropdown": "^1.5.0",
     "ngx-show-hide-password": "^2.3.0",
     "rxjs": "~6.6.0",
     "tslib": "^2.0.0",
