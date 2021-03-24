@@ -13,6 +13,8 @@ import { SetupNewpasswordComponent } from './setup-newpassword/setup-newpassword
 import { EmailTemplateComponent } from './email-template/email-template.component';
 import { ShowHidePasswordModule } from 'ngx-show-hide-password';
 import { NewUserRegistrationComponent } from './new-user-registration/new-user-registration.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { NgxBootstrapMultiselectModule } from 'ngx-bootstrap-multiselect';
 
 @NgModule({
   declarations: [
@@ -30,7 +32,11 @@ import { NewUserRegistrationComponent } from './new-user-registration/new-user-r
     BrowserModule,
     AppRoutingModule,
     ConfigurationModule,
-    ShowHidePasswordModule
+    ShowHidePasswordModule,
+
+    NgxBootstrapMultiselectModule,
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

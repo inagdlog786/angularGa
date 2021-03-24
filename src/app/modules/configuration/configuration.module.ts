@@ -13,16 +13,25 @@ import { DistributionConfigurationsComponent } from './distribution-configuratio
 import { AdminApplicationConfigurationsComponent } from './admin-application-configurations/admin-application-configurations.component';
 import { UserConfigurationsComponent } from './user-configurations/user-configurations.component';
 
+import { NgxBootstrapMultiselectModule } from 'ngx-bootstrap-multiselect';
+import { FormsModule } from '@angular/forms'; 
+import { ReactiveFormsModule } from '@angular/forms';
+
+
 @NgModule({
   declarations: [SftpConfigurationsComponent, TabLayoutComponent, DistributionConfigurationsComponent,
     AdminApplicationConfigurationsComponent,
     UserConfigurationsComponent],
-  imports: [
-    CommonModule,
-    HttpClientModule,
-    AngularSvgIconModule.forRoot() ,
-    ConfigurationRoutingModule,    
-    TabsModule.forRoot(),    
+    imports: [
+      CommonModule,
+      HttpClientModule,
+      AngularSvgIconModule.forRoot() ,
+      ConfigurationRoutingModule,    
+      TabsModule.forRoot(),  
+      NgxBootstrapMultiselectModule ,
+      
+      FormsModule,
+      ReactiveFormsModule
   ]
 })
 export class ConfigurationModule { }

@@ -25,6 +25,7 @@
     "angular-svg-icon": "^11.1.2",
     "bootstrap": "^4.6.0",
     "ngx-bootstrap": "^6.2.0",
+    "ngx-bootstrap-multiselect": "^2.1.1",
     "ngx-password-toggle": "^1.0.3",
     "ngx-show-hide-password": "^2.3.0",
     "rxjs": "~6.6.0",
