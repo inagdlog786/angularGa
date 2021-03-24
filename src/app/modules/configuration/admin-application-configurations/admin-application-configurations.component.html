@@ -122,7 +122,7 @@
                     <div class="col-md-3 mb-3">
                         <label for="url" class="form-label">Role Access</label>
 
-                        <ngx-bootstrap-multiselect [options]="myOptions" [(ngModel)]="optionsModel" formControlName="userRole" (ngModelChange)="onChange()" [settings]="mySettings" class="form-control p-0" ></ngx-bootstrap-multiselect>
+                        <ngx-bootstrap-multiselect [options]="roleOptions" [(ngModel)]="roleOptionsModel" formControlName="userRole" (ngModelChange)="onChange()" [settings]="roleSettings" class="form-control p-0" ></ngx-bootstrap-multiselect>
                         
                         <!-- <select class="form-control" formControlName="distStartYear">
                             <option selected>Citation Name</option>

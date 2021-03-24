@@ -17,11 +17,11 @@ export class AdminApplicationConfigurationsComponent implements OnInit {
     userRole: new FormControl('')
   });
 
-  optionsModel: number[] = [];
-  myOptions: IMultiSelectOption[] = [ ];
+  roleOptionsModel: number[] = [];
+  roleOptions: IMultiSelectOption[] = [ ];
 
   // Settings configuration
-  mySettings: IMultiSelectSettings = {
+  roleSettings: IMultiSelectSettings = {
     enableSearch: true,
     buttonClasses: 'btn',
     containerClasses:'d-block',
@@ -30,7 +30,7 @@ export class AdminApplicationConfigurationsComponent implements OnInit {
   };
 
   ngOnInit(): void {
-    this.myOptions = [
+    this.roleOptions = [
       { id: 1, name: 'Option 1' },
       { id: 2, name: 'Option 2' },
       { id: 3, name: 'Option 3' },
@@ -40,7 +40,7 @@ export class AdminApplicationConfigurationsComponent implements OnInit {
 
   
   onChange() {
-    console.log(this.optionsModel);
+    console.log(this.roleOptionsModel);
   }
 
 }
