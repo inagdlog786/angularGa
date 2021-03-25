@@ -1,1 +1,52 @@
-/* No CSS *//*# sourceMappingURL=page-footer.component.css.map */
+.footertxt {
+  font-size: 0.76rem;
+  color: #000;
+}
+
+.footertxt a {
+  padding-left: 2px;
+  padding-right: 2px;
+  margin: 0 3px;
+  color: #000;
+}
+
+.footertxt .footerNav {
+  margin: 6px 0 0 0;
+  padding: 0;
+}
+
+.footertxt .footerNav li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: inline;
+}
+
+@media only screen and (min-width: 1025px) {
+  .footerLeft {
+    display: block !important;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .col-md-12.footerMenu, .col-md-12.footerCopy {
+    max-width: 100% !important;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 100%;
+            flex: 0 0 100%;
+  }
+  .text-md-left.footerCopy {
+    text-align: left !important;
+  }
+  .footerNav {
+    margin-top: 0;
+  }
+  .footerNav li {
+    display: block !important;
+    line-height: 24px;
+  }
+  .footerNav li a {
+    padding: 0 !important;
+  }
+}
+/*# sourceMappingURL=page-footer.component.css.map */

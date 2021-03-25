@@ -9,6 +9,14 @@ svg {
   max-height: 100%;
 }
 
+.sftpConfig .error-field {
+  border-color: #E5202E;
+}
+
+.sftpConfig .error-txt {
+  color: #E5202E;
+}
+
 .sftpConfig .dataSourceTable th {
   font-size: 0.8rem;
   padding: 0.7rem;

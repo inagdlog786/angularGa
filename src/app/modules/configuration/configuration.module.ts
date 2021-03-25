@@ -14,6 +14,7 @@ import { AdminApplicationConfigurationsComponent } from './admin-application-con
 import { UserConfigurationsComponent } from './user-configurations/user-configurations.component';
 
 import { NgxBootstrapMultiselectModule } from 'ngx-bootstrap-multiselect';
+import { TimepickerModule } from 'ngx-bootstrap/timepicker';
 import { FormsModule, FormBuilder } from '@angular/forms'; 
 import { ReactiveFormsModule } from '@angular/forms';
 
@@ -29,6 +30,7 @@ import { SelectDropDownModule } from 'ngx-select-dropdown'
       AngularSvgIconModule.forRoot() ,
       ConfigurationRoutingModule,    
       TabsModule.forRoot(),  
+      TimepickerModule.forRoot(),
       NgxBootstrapMultiselectModule ,
 
       SelectDropDownModule,

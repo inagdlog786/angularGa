@@ -13,7 +13,7 @@
 
         <div>
             <!-- Form Start -->
-            <form>
+            <form [formGroup]="sftpconfig">
                 <div class="row">
                     <div class="col-md-3 mb-3">
                         <label for="url" class="form-label">URL</label>
@@ -119,10 +119,16 @@
                         <label for="time" class="form-label pl-4">Time</label>
                         <div class="input-group">
                             <span class="input-group-text btn btn-link pl-0">@</span>
-                            <select class="form-control" aria-label="time" formControlName="sftpTime">
+                            <input type="time">
+                            <!-- <timepicker [(ngModel)]="mytime"></timepicker> -->
+
+                            <timepicker [(ngModel)]="myTime"  [min]="minTime" [max]="maxTime" formControlName="pickTime"></timepicker>
+<hr>
+
+                            <!-- <select class="form-control" aria-label="time" formControlName="sftpTime">
                                 <option selected>8:00</option>
                                 <option value="1">9:00</option>
-                            </select>
+                            </select> -->
                         </div>
                     </div>
                     <div class="col-md-2 mb-3">

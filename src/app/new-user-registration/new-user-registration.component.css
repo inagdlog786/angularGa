@@ -1,0 +1,16 @@
+.user-registration {
+  height: calc(100vh-200px);
+}
+
+.user-registration input, .user-registration select, .user-registration .btn {
+  border-radius: 0rem;
+}
+
+.user-registration .freebg {
+  background: #1e7bcb;
+}
+
+.user-registration .bestbg {
+  background: #0844a6;
+}
+/*# sourceMappingURL=new-user-registration.component.css.map */

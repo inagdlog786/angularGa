@@ -24,6 +24,7 @@
     "@fortawesome/free-solid-svg-icons": "^5.15.2",
     "angular-svg-icon": "^11.1.2",
     "bootstrap": "^4.6.0",
+    "bootstrap-input-spinner": "^2.0.9",
     "ngx-bootstrap": "^6.2.0",
     "ngx-bootstrap-multiselect": "^2.1.1",
     "ngx-password-toggle": "^1.0.3",

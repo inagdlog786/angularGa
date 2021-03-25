@@ -2,7 +2,7 @@
 /* You can add global styles to this file, and also import other style files */
 @import url("https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap");
 body {
-  font: "Fira Sans", sans-serif;
+  font: 0.8rem "Fira Sans", sans-serif normal;
   color: #000;
 }
 

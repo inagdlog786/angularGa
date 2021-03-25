@@ -1,4 +1,4 @@
-.adminConfig input, .adminConfig select, .adminConfig button {
+.adminConfig input, .adminConfig select, .adminConfig button, .adminConfig .form-control {
   border-radius: 0;
 }
 

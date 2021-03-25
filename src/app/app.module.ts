@@ -15,6 +15,7 @@ import { ShowHidePasswordModule } from 'ngx-show-hide-password';
 import { NewUserRegistrationComponent } from './new-user-registration/new-user-registration.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { NgxBootstrapMultiselectModule } from 'ngx-bootstrap-multiselect';
+import { AllComponent } from './test/all/all.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { NgxBootstrapMultiselectModule } from 'ngx-bootstrap-multiselect';
     PreLoginHeaderComponent,
     SetupNewpasswordComponent,
     EmailTemplateComponent,
-    NewUserRegistrationComponent
+    NewUserRegistrationComponent,
+    AllComponent
   ],
   imports: [
     BrowserAnimationsModule,

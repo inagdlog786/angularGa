@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAEA,AAAA,kBAAkB,CAAA;EACd,MAAM,EAAE,iBAAiB;CAU5B;;AAXD,AAEI,kBAFc,CAEd,KAAK,EAFT,kBAAkB,CAER,MAAM,EAFhB,kBAAkB,CAED,IAAI,CAAA;EACb,aAAa,EAAE,IAAI;CACtB;;AAJL,AAKI,kBALc,CAKd,OAAO,CAAA;EACH,UAAU,EARP,OAAO;CASb;;AAPL,AAQI,kBARc,CAQd,OAAO,CAAA;EACH,UAAU,EAVR,OAAO;CAWZ",
+    "sources": [
+        "new-user-registration.component.scss"
+    ],
+    "names": [],
+    "file": "new-user-registration.component.css"
+}

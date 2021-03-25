@@ -23,8 +23,8 @@ export class AdminApplicationConfigurationsComponent implements OnInit {
   // Settings configuration
   roleSettings: IMultiSelectSettings = {
     enableSearch: true,
-    buttonClasses: 'btn',
-    containerClasses:'d-block',
+    buttonClasses: 'btn w-100 text-left',
+    containerClasses:'d-block multi-select-option',
     dynamicTitleMaxItems: 2,
     displayAllSelectedText: true
   };
