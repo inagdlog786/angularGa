@@ -25,4 +25,21 @@ $paramount-color:#007bff;
             }
         }
     }    
+    .user-role{
+        ::ng-deep{
+            &.multi-select-option{
+                .dropdown-toggle{      
+                    &:after{
+                        position: absolute;
+                        top:16px;
+                        right: 11px;
+                    }
+                }
+                .dropdown-item.active, .dropdown-item:active{
+                    background-color: #fff;
+                    color: #000;
+                }
+            }
+        }
+    }
 }

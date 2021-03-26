@@ -31,23 +31,30 @@ export class SftpConfigurationsComponent implements OnInit {
 
   //Time
       isMeridian = false;
-      // readonly = true;
-      // myTime = new Date();
 
-      myTime: Date = new Date();
       minTime: Date = new Date();
       maxTime: Date = new Date();
+
+      mytime: Date | undefined = new Date();
+      isValid!: boolean;  
+
+      mstep = 60;
 
   //Time End
 
   constructor() { 
-    this.minTime.setHours(20);
+    this.minTime.setHours(8);
     this.minTime.setMinutes(0);
-    this.maxTime.setHours(23);
-    this.maxTime.setMinutes(59);
+    this.maxTime.setHours(13);
+    this.maxTime.setMinutes(0);
   }
 
   ngOnInit(): void {
+    const time = new Date();
+    time.setHours(8);
+    time.setMinutes(0);
+ 
+    this.mytime = time;
   }
 
 }

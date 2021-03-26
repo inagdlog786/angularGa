@@ -46,4 +46,46 @@ svg{
             fill: #e5202e;
         }
     }
+
+    .sftp-time{
+        ::ng-deep{
+            &table{
+                tr{
+                    &:nth-child(odd){          
+                        position: absolute;
+                        width: 92%;
+                        top: 5px;
+                    }
+                    .text-center{
+                        padding: 0;   
+                    }
+                }
+                td{
+                    border: 0px red solid;
+                    width: 5px;
+                }
+            }
+            &.bs-chevron-up,&.bs-chevron-down{
+                position: absolute;
+                right: 7px;
+                top:5px;
+                z-index: 999;
+                width: 7px;
+                height: 7px;
+                border-width: 1px 0px 0 1px;
+            }
+            &.bs-chevron-down{
+                bottom:5px;
+                top: auto;
+            }
+            &.bs-timepicker-field{
+                border:none;
+                background: none;
+                padding: 0;
+                width: 25px;
+                height: auto;
+        }
+            
+        }        
+    }
 }
