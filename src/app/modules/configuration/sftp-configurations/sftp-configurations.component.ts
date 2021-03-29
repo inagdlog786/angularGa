@@ -45,8 +45,8 @@ export class SftpConfigurationsComponent implements OnInit {
   constructor() { 
     this.minTime.setHours(8);
     this.minTime.setMinutes(0);
-    this.maxTime.setHours(13);
-    this.maxTime.setMinutes(0);
+    this.maxTime.setHours(12);
+    this.maxTime.setMinutes(30);
   }
 
   ngOnInit(): void {

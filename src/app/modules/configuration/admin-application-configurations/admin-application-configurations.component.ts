@@ -22,11 +22,16 @@ export class AdminApplicationConfigurationsComponent implements OnInit {
 
   // Settings configuration
   roleSettings: IMultiSelectSettings = {
-    enableSearch: true,
+    enableSearch: false,
     buttonClasses: 'btn w-100 text-left',
     containerClasses:'d-block multi-select-option',
     dynamicTitleMaxItems: 2,
     displayAllSelectedText: true
+  };
+
+  // Text configuration
+  roleTexts: IMultiSelectTexts = {
+    defaultTitle: 'James'
   };
 
   ngOnInit(): void {
