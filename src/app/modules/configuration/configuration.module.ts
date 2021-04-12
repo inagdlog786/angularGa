@@ -20,6 +20,12 @@ import { ReactiveFormsModule } from '@angular/forms';
 
 import { SelectDropDownModule } from 'ngx-select-dropdown'
 
+
+import { NgSelectModule } from '@ng-select/ng-select';
+
+
+import { NgMultiSelectDropDownModule } from 'ng-multiselect-dropdown';
+
 @NgModule({
   declarations: [SftpConfigurationsComponent, TabLayoutComponent, DistributionConfigurationsComponent,
     AdminApplicationConfigurationsComponent,
@@ -33,7 +39,10 @@ import { SelectDropDownModule } from 'ngx-select-dropdown'
       TimepickerModule.forRoot(),
       NgxBootstrapMultiselectModule ,
 
+      NgMultiSelectDropDownModule.forRoot(),
+
       SelectDropDownModule,
+      NgSelectModule, 
       
       FormsModule,
       ReactiveFormsModule
