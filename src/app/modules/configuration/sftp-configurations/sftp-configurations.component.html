@@ -135,7 +135,13 @@
                     </div>
 
                     <div class="col-md-3 mb-3">
-                        <button type="submit" class="btn btn-primary">Save</button>
+                        <!-- <ngx-spinner bdColor = "rgba(0, 0, 0, 0.8)" size = "medium" color = "#fff" type = "square-jelly-box" [fullScreen] = "true"><p style="color: white" > Loading... </p></ngx-spinner> -->
+
+                        <ngx-spinner [name]="savespinner" [fullScreen]="true" type="square-jelly-box" size="medium"></ngx-spinner>
+
+                        <!-- <button type="submit" class="btn btn-primary">Save</button> -->
+                        <button nbButton size="xsmall"  status="primary" (click)="showSpinner(savespinner)" class="btn btn-primary">Save</button>
+
                         <button type="reset" class="btn btn-link">Cancel</button>
                     </div>
                 </div>

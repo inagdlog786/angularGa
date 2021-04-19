@@ -25,6 +25,7 @@ import { NgSelectModule } from '@ng-select/ng-select';
 
 
 import { NgMultiSelectDropDownModule } from 'ng-multiselect-dropdown';
+import { NgxSpinnerModule } from "ngx-spinner";
 
 @NgModule({
   declarations: [SftpConfigurationsComponent, TabLayoutComponent, DistributionConfigurationsComponent,
@@ -45,7 +46,9 @@ import { NgMultiSelectDropDownModule } from 'ng-multiselect-dropdown';
       NgSelectModule, 
       
       FormsModule,
-      ReactiveFormsModule
+      ReactiveFormsModule,
+
+      NgxSpinnerModule
   ]
 })
 export class ConfigurationModule { }
