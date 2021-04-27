@@ -1,0 +1,38 @@
+.user-profile{
+    margin-left: 25px;
+    a{
+        padding: 0;
+        &::after{
+            display: none;
+        }
+        &:focus{    
+            outline: 0;
+            box-shadow: 0 0 0 0.2rem rgb(0 123 255 / 0%);
+        }
+        span{
+                float: left;;
+                text-align: right;
+                color: #333;
+                overflow: hidden;
+                line-height: 17px;
+                label{
+                    color: #ccc;
+                    display: block;
+                }
+        }
+        img{
+            width: 40px;
+            border-radius: 100%;
+            display: inline-block;
+            border: 1px #ccc solid;
+            margin:0 5px 0;
+        }
+    }
+    .dropdown-menu{
+        margin: 0;
+        padding: 0;
+        a{
+            padding:5px 10px;
+        }
+    }
+}
