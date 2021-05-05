@@ -91,12 +91,19 @@
                     </div>
 
                     <div class="col-md-3 mb-3 position-relative">
-                        <label for="dataUserName" class="form-label">Data Source Name</label>
-                        <input type="password" class="form-control success-field border-success" id="" 
-                            formControlName="sftpdataUserName">
+                            <label for="dbPassword" class="form-label">Database access Password</label>
+                            <label for="dbPassword" class="form-label float-right" (click)="toggledatabasepasswordType()">
+                                <i class="fa fa-eye-slash pr-1"
+                                    [ngClass]="{'fa-eye-slash': !fieldTextType, 'fa-eye': fieldTextType }"></i>
+                                <span *ngIf="!databasepassword"> Show</span>
+                                <span *ngIf="databasepassword">  Hide </span>
+                            </label>
+                            <div class="input-group mb-2 mr-sm-2">
+                                <input [type]="databasepassword ? 'text' : 'password'" class="form-control" id=""  formControlName="dbPassword" />
+                            </div>
                             <img src="../../../../assets/images/icons/check.png" width="20px" class="success-check position-absolute"/>
                             <small class="form-text text-success">Field Success Msg</small>
-                    </div>
+                        </div>
 
                     <div class="col-md-2 mb-3 position-relative">
                         <label for="" class="form-label">&nbsp;</label>

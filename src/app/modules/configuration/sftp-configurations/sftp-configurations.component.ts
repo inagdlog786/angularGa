@@ -17,6 +17,10 @@ export class SftpConfigurationsComponent implements OnInit {
   toggleFieldTextType() {
     this.fieldTextType = !this.fieldTextType;
   }
+  databasepassword!: boolean;
+  toggledatabasepasswordType() {
+    this.databasepassword = !this.databasepassword;
+  }
 
   sftpconfig = new FormGroup({    
     sftpUserName: new FormControl(''),
@@ -31,7 +35,8 @@ export class SftpConfigurationsComponent implements OnInit {
     sftpFrequency: new FormControl(''),
     pickTime: new FormControl(''),
     sftpTimeZone: new FormControl(''),
-    sftpFolder: new FormControl('')
+    sftpFolder: new FormControl(''),
+    dbPassword: new FormControl('')
   });
 
   //Time
