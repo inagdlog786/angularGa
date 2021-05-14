@@ -9,12 +9,21 @@ svg {
   max-height: 100%;
 }
 
+.sftpConfig .border-grey {
+  border: 1px solid #ced4da;
+}
+
 .sftpConfig .error-field {
   border-color: #E5202E;
 }
 
 .sftpConfig .error-txt {
   color: #E5202E;
+}
+
+.sftpConfig .success-check {
+  top: 42px;
+  right: 15px;
 }
 
 .sftpConfig .dataSourceTable th {
@@ -54,5 +63,147 @@ svg {
 
 .sftpConfig .icoStyle .deltIco {
   fill: #e5202e;
+}
+
+.sftpConfig .sftp-time ::ng-deeptable tr:nth-child(odd) {
+  position: absolute;
+  width: 92%;
+  top: 5px;
+}
+
+.sftpConfig .sftp-time ::ng-deeptable tr .text-center {
+  padding: 0;
+}
+
+.sftpConfig .sftp-time ::ng-deeptable td {
+  width: 5px;
+}
+
+.sftpConfig .sftp-time ::ng-deep.bs-chevron-up, .sftpConfig .sftp-time ::ng-deep.bs-chevron-down {
+  position: absolute;
+  right: 7px;
+  top: 5px;
+  z-index: 999;
+  width: 7px;
+  height: 7px;
+  border-width: 1px 0px 0 1px;
+}
+
+.sftpConfig .sftp-time ::ng-deep.bs-chevron-down {
+  bottom: 5px;
+  top: auto;
+}
+
+.sftpConfig .sftp-time ::ng-deep.bs-timepicker-field {
+  border: none;
+  background: none;
+  padding: 0;
+  width: 25px;
+  height: auto;
+}
+
+.sftpConfig .table-head-fixed table * {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+  -moz-box-sizing: inherit;
+}
+
+.sftpConfig .table-head-fixed table {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+}
+
+.sftpConfig .table-head-fixed table thead {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+}
+
+.sftpConfig .table-head-fixed table tbody, .sftpConfig .table-head-fixed table thead {
+  display: inline-block;
+  overflow-y: scroll;
+  height: 300px;
+}
+
+.sftpConfig .table-head-fixed table tbody::-webkit-scrollbar, .sftpConfig .table-head-fixed table thead::-webkit-scrollbar {
+  width: 4px;
+}
+
+.sftpConfig .table-head-fixed table tbody::-webkit-scrollbar-track, .sftpConfig .table-head-fixed table thead::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+.sftpConfig .table-head-fixed table tbody::-webkit-scrollbar-thumb, .sftpConfig .table-head-fixed table thead::-webkit-scrollbar-thumb {
+  background: #007bff;
+}
+
+.sftpConfig .table-head-fixed table tbody::-webkit-scrollbar-thumb:hover, .sftpConfig .table-head-fixed table thead::-webkit-scrollbar-thumb:hover {
+  background: #007bff;
+  cursor: pointer;
+}
+
+.sftpConfig .table-head-fixed table thead {
+  overflow-y: scroll;
+  height: auto;
+}
+
+.sftpConfig .table-head-fixed table thead::-webkit-scrollbar-thumb {
+  background: #FFF;
+}
+
+.sftpConfig .table-head-fixed table thead::-webkit-scrollbar-thumb:hover {
+  background: #fff;
+  cursor: pointer;
+}
+
+.sftpConfig .table-head-fixed table thead > tr,
+.sftpConfig .table-head-fixed table tbody > tr,
+.sftpConfig .table-head-fixed table ng servetfoot > tr {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+}
+
+.sftpConfig .table-head-fixed table thead,
+.sftpConfig .table-head-fixed table tfoot {
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+}
+
+.sftpConfig .table-head-fixed table th,
+.sftpConfig .table-head-fixed table tbody td {
+  width: 13%;
+  text-overflow: ellipsis;
+  display: inline-block;
+  padding: 0.1rem 0.3rem;
+}
+
+.sftpConfig .table-head-fixed table th:last-child,
+.sftpConfig .table-head-fixed table tbody td:last-child {
+  width: 9%;
 }
 /*# sourceMappingURL=sftp-configurations.component.css.map */

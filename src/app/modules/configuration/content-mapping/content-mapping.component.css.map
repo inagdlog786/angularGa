@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AACI,gBADY,CACZ,MAAM,CAAA;EACF,aAAa,EAAE,CAAC;CACnB",
+    "sources": [
+        "content-mapping.component.scss"
+    ],
+    "names": [],
+    "file": "content-mapping.component.css"
+}

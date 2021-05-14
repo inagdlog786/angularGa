@@ -26,11 +26,15 @@ import { NgSelectModule } from '@ng-select/ng-select';
 
 import { NgMultiSelectDropDownModule } from 'ng-multiselect-dropdown';
 import { NgxSpinnerModule } from "ngx-spinner";
+import { ContentMappingComponent } from './content-mapping/content-mapping.component';
+import { CreateNewplanComponent } from './create-newplan/create-newplan.component';
 
 @NgModule({
   declarations: [SftpConfigurationsComponent, TabLayoutComponent, DistributionConfigurationsComponent,
     AdminApplicationConfigurationsComponent,
-    UserConfigurationsComponent],
+    UserConfigurationsComponent,
+    ContentMappingComponent,
+    CreateNewplanComponent],
     imports: [
       CommonModule,
       HttpClientModule,

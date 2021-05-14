@@ -98,9 +98,10 @@
                                 <span *ngIf="!databasepassword"> Show</span>
                                 <span *ngIf="databasepassword">  Hide </span>
                             </label>
-                            <div class="input-group mb-2 mr-sm-2">
+                            <div class="input-group mb-2 mr-sm-2 border border-secondary">
                                 <input [type]="databasepassword ? 'text' : 'password'" class="form-control" id=""  formControlName="dbPassword" />
                             </div>
+                                
                             <img src="../../../../assets/images/icons/check.png" width="20px" class="success-check position-absolute"/>
                             <small class="form-text text-success">Field Success Msg</small>
                         </div>

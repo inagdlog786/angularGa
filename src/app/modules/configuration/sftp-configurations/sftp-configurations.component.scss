@@ -10,6 +10,9 @@ svg{
     max-height: 100%;
 }
 .sftpConfig{
+    .border-grey{
+        border:1px solid #ced4da;
+    }
     .error-field{
         border-color:$error;
     }
