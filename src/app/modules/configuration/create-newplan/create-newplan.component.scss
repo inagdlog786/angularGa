@@ -1,0 +1,77 @@
+.table-head-fixed 
+{
+    
+    table * {
+        box-sizing: inherit;
+        -moz-box-sizing: inherit;
+    }
+    table {
+        box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+            
+        thead {
+            display: flex;
+            flex-direction: column;
+            align-items: stretch;
+        }
+        tbody,thead {
+            // overflow-y: scroll;
+            display: inline-block;
+    
+            overflow-y:scroll;
+                height: 300px;
+                &::-webkit-scrollbar {
+                    width: 4px;
+                }
+                &::-webkit-scrollbar-track {
+                    background: #f1f1f1; 
+                }
+                &::-webkit-scrollbar-thumb {
+                    background: #007bff; 
+                }
+                &::-webkit-scrollbar-thumb:hover {
+                    background: #007bff; 
+                    cursor: pointer;
+                }
+        }
+    
+        thead {    
+            overflow-y:scroll;
+                height: auto;
+                &::-webkit-scrollbar-thumb {
+                    background: #FFF; 
+                }
+                &::-webkit-scrollbar-thumb:hover {
+                    background: #fff; 
+                    cursor: pointer;
+                }
+        }
+        thead > tr,
+        tbody > tr,
+        ng servetfoot > tr 
+        {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+        }
+        thead,
+        tfoot {
+            flex-shrink: 0;
+        }
+        
+        th,
+        tbody td {
+            width: 33%;
+            text-overflow: ellipsis;
+            display: inline-block;
+            padding: 0.1rem 0.3rem;
+        }
+        th:last-child,
+        tbody td:last-child{
+            width: 34%;
+        }
+    }
+}

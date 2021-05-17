@@ -20,7 +20,7 @@
                             Existing Mapping
                         </div>
                         <div class="col-md-6 text-right">
-                           <button (click)=toggleDisplayMappingFileds() class="btn btn-outline-primary"> 
+                           <button (click)=toggleDisplayMappingFileds()  class="btn btn-outline-primary"> 
                                Add New Mapping
                            </button>
                         </div>
@@ -99,7 +99,7 @@
                 </div>
 
                 <!-- Add New Mapping Hide div -->
-                <div [hidden]="isShowMappingFileds">
+                <div [hidden]="isShowMappingFileds"  id="createnewplan">
                     <app-create-newplan></app-create-newplan>
                 </div>
                 <!-- Add New Mapping Hide div close-->
