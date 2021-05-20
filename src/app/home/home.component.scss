@@ -1,0 +1,28 @@
+.home-component{
+    .home-banner{
+        background: #0a1737; /* Old browsers */
+        background: -moz-linear-gradient(left,  #0a1737 0%, #062cad 100%); /* FF3.6-15 */
+        background: -webkit-linear-gradient(left,  #0a1737 0%,#062cad 100%); /* Chrome10-25,Safari5.1-6 */
+        background: linear-gradient(to right,  #0a1737 0%,#062cad 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0a1737', endColorstr='#062cad',GradientType=1 ); /* IE6-9 */
+    }
+    .card{
+        border-radius: 0;
+        // &:hover{
+        //     border-color: #062cad;
+        // }
+        &.add-new-graph{
+            border: 1px dashed #062cad;
+        }
+        a{
+            color: #000;
+            &:hover{                
+                text-decoration: none;
+            }
+        }
+        .explore-icon{
+            display: block;
+            min-height: 35px;
+        }
+    }
+}

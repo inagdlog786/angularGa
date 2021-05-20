@@ -16,6 +16,7 @@ import { NewUserRegistrationComponent } from './new-user-registration/new-user-r
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { NgxBootstrapMultiselectModule } from 'ngx-bootstrap-multiselect';
 import { AllComponent } from './test/all/all.component';
+import { HomeComponent } from './home/home.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,8 @@ import { AllComponent } from './test/all/all.component';
     SetupNewpasswordComponent,
     EmailTemplateComponent,
     NewUserRegistrationComponent,
-    AllComponent
+    AllComponent,
+    HomeComponent
   ],
   imports: [
     BrowserAnimationsModule,

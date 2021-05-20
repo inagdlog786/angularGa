@@ -5,12 +5,14 @@ import { SetupNewpasswordComponent } from './setup-newpassword/setup-newpassword
 import { EmailTemplateComponent } from './email-template/email-template.component';
 import { NewUserRegistrationComponent } from './new-user-registration/new-user-registration.component';
 import { AllComponent } from './test/all/all.component';
+import { HomeComponent } from './home/home.component';
 
 const routes: Routes = [
   { path: 'login', component: LoginComponent },  
   { path: 'reenter', component: SetupNewpasswordComponent },  
   { path: 'email', component: EmailTemplateComponent },
   { path: 'registration', component: NewUserRegistrationComponent },
+  { path: 'home', component: HomeComponent },
   { path: 'test', component: AllComponent }
 ];
 
