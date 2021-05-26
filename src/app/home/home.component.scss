@@ -11,12 +11,19 @@
         &:hover{
             border-color: #062cad;   
             background-color:#eff6fa;         
-            .explore-icon{
-                background:url('../../assets/images/icons/icon1h.png') no-repeat left top;
+            .explore-icon{                
+                // background:url('../../assets/images/icons/hierarchical-structure.svg') no-repeat left top;
+                svg{
+                    fill: red;
+                }
             }
         }
         .explore-icon{
-            background:url('../../assets/images/icons/icon1.png') no-repeat left top;
+            // background:url('../../assets/images/icons/hierarchical-structure.svg') no-repeat left top;
+            svg{
+                // fill: yellow;
+                width: 35px;
+            }
         }
 
         &.add-new-graph{
@@ -24,11 +31,18 @@
             &:hover{          
                 background-color:#eff6fa; 
                 .explore-icon{
-                    background:url('../../assets/images/icons/plush.png') no-repeat center top;
+                    // background:url('../../assets/images/icons/plush.png') no-repeat center top; 
+                    svg{
+                        fill: red;
+                    }
                 }
             }            
             .explore-icon{
-                background:url('../../assets/images/icons/plus.png') no-repeat center top;
+                // background:url('../../assets/images/icons/plus.png') no-repeat center top;
+                svg{
+                    // fill: yellow;
+                    width: 35px;
+                }
             }
         }
         a{
