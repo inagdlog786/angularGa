@@ -17,6 +17,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { NgxBootstrapMultiselectModule } from 'ngx-bootstrap-multiselect';
 import { AllComponent } from './test/all/all.component';
 import { HomeComponent } from './home/home.component';
+import { ExplorationModule } from './modules/exploration/exploration.module';
 
 @NgModule({
   declarations: [
@@ -37,10 +38,10 @@ import { HomeComponent } from './home/home.component';
     AppRoutingModule,
     ConfigurationModule,
     ShowHidePasswordModule,
-
     NgxBootstrapMultiselectModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    ExplorationModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,0 +1,50 @@
+<div class="queryconfig">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                    labore                    et
+                    <br> magna aliqua. Ut enim ad minim veniam</p>
+
+                <h5>Built Select Clause </h5>
+            </div>
+            <div class="col-md-12 slected-checkbox">
+                <span *ngFor="let item of data"> 
+                    <span *ngIf="item.selected"> {{item.label}}<img src="../../../../assets/images/icons/close.png" width="7px" (click)="onSelect(item)" ></span>
+                </span>
+            </div>
+
+            
+
+            <div class="col-md-12 mt-1">
+                <span class="badge badge-pill badge-dark">
+                    {{data.length}}
+                </span> Selected
+                <button  (click)="onUnSelectAll()" class="btn btn-link p-0 ml-2">Clear All</button>
+            </div>
+        </div>
+        
+    <div class="view-checkboxes p-3 mt-2 mb-3">
+        <div>
+            <input type="checkbox" id="selectall"  (click)="toogleSelect()"/>
+            <label for="selectall" class="pl-1">  Select all</label>
+        </div>
+        <div [ngClass]="viewAll ? 'view-limit-data':'viewall-data'" class="row">
+            <div *ngFor="let item of data; let i=index;" class="float-left col-md-3" >
+                <input type="checkbox" [(ngModel)]="item.selected" id="check-list{{i+1}}" class="chklist" /> <label for="check-list{{i+1}}">{{item.label}}   </label>             
+            </div>
+        </div>
+    </div>
+        
+      
+    <button (click)="onSelectAll()">Select</button>
+    <button (click)="viewAll=!viewAll" class="btn btn-link p-0 float-right">{{viewAll ? 'View All':'View Limit'}}</button>  
+
+<!-- {{SignupForm.value | json }} -->
+<!-- {{this.data | json}} -->
+
+
+        
+        <br/><br/><br/><br/><br/><br/>&nbsp;
+    </div>
+</div>

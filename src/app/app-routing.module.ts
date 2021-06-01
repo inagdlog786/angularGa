@@ -13,7 +13,8 @@ const routes: Routes = [
   { path: 'email', component: EmailTemplateComponent },
   { path: 'registration', component: NewUserRegistrationComponent },
   { path: 'home', component: HomeComponent },
-  { path: 'test', component: AllComponent }
+  { path: 'test', component: AllComponent },
+  // { path: 'modules/exploration', loadChildren: () => import('./modules/exploration/exploration.module').then(m => m.ExplorationModule) }
 ];
 
 @NgModule({
