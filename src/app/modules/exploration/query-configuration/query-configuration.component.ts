@@ -13,40 +13,32 @@ export class QueryConfigurationComponent implements OnInit {
   viewAll=true;
   data=[
     {label:'Bike',value:'bike',selected:true},
-    {label:'Car',value:'bike',selected:false},
-    {label:'Cycle',value:'bike',selected:false},
-    {label:'Bike1',value:'bike1',selected:false},
-    {label:'Car1',value:'bike1',selected:false},
-    {label:'Cycle1',value:'bike1',selected:false},
-    {label:'Bike2',value:'bike1',selected:false},
-    {label:'Car2',value:'bike1',selected:false},
-    {label:'Cycle2',value:'bike1',selected:false},
-    {label:'Bike3',value:'bike1',selected:false},
-    {label:'Car3',value:'bike1',selected:false},
-    {label:'Cycle3',value:'bike1',selected:false},
-    {label:'Bike4',value:'bike1',selected:false},
-    {label:'Car4',value:'bike1',selected:false},
-    {label:'Cycle4',value:'bike1',selected:false}
+    {label:'Car',value:'Car',selected:false},
+    {label:'Cycle',value:'Cycle',selected:false},
+    {label:'Bike1',value:'Bike1',selected:false},
+    {label:'Car1',value:'Car1',selected:false},
+    {label:'Cycle1',value:'Cycle1',selected:false},
+    {label:'Bike2',value:'Bike2',selected:false},
+    {label:'Car2',value:'Car2',selected:false},
+    {label:'Cycle2',value:'Cycle2',selected:false},
+    {label:'Bike3',value:'Bike3',selected:false},
+    {label:'Car3',value:'Car3',selected:false},
+    {label:'Cycle3',value:'Cycle3',selected:false},
+    {label:'Bike4',value:'Bike4',selected:false},
+    {label:'Car4',value:'Car4',selected:false},
+    {label:'Cycle4',value:'Cycle4',selected:false}
   ];
 
-  selecteddata=[];
-  count!: number;
-
-  
+  selecteddata:any[]=[];
+  selectall:boolean=false;
 
   constructor() {}
-
-  
-  //  SignupForm = new FormGroup({
-  //     bike:new FormControl(false),
-  //     car:new FormControl(true)
-  //  });
    
   
 
-  ngOnInit(): void { }
-
-  
+  ngOnInit(): void {
+   this.onFindSelectedList();
+  }  
   
   onSelect(item:any){
   this.data.filter(selectCheckbox=>{
@@ -54,35 +46,33 @@ export class QueryConfigurationComponent implements OnInit {
         selectCheckbox.selected=false;
       }      
     });
+    this.onFindSelectedList();
+  }
 
-    // this.count = 0;
-    // this.data.forEach(data=>{
-    //   console.log(data)
-    //   if(item.checked){
-    //     this.count= this.count+1
-    //   }  
-    // } )
+  // Select/Unselect All checkboxes and ClearAll
+  
+  toogleSelect(event:any){
+    if(event){
+      this.data.filter(toogleCheckbox=>{
+        toogleCheckbox.selected = true;
+      });
+    }else{
+      this.data.filter(toogleCheckbox=>{
+        toogleCheckbox.selected = false;
+      });
+    }
+    this.onFindSelectedList();
+  }
 
-  }
-  onSelectAll(){
-    this.data.filter(selectCheckboxAll=>{
-      selectCheckboxAll.selected=true;
+  // Selected item count
+  onFindSelectedList(){
+    this.selecteddata=[];
+    this.data.forEach(checklist=>{
+      if(checklist.selected){
+        this.selecteddata.push(checklist);
+      }
     });
-  }
-  onUnSelectAll(){
-    this.data.filter(clearAllCheckbox=>{
-      clearAllCheckbox.selected=false;
-    });
-  }
-  // checkToogle!: boolean;
-  // toogleSelect1() {
-  //   this.checkToogle = !this.checkToogle;
-  // }
-  toogleSelect(){
-    this.data.filter(toogleCheckbox=>{
-      toogleCheckbox.selected = true;
-      // toogleCheckbox.selected = !toogleCheckbox.selected;
-    });
+    this.selectall= (this.data.length === this.selecteddata.length) ? true:false;
   }
   
 }
