@@ -1,7 +1,8 @@
 import { Component, OnInit } from '@angular/core';
+import { FormGroup, FormControl, Validators, FormBuilder }  from '@angular/forms';
+import {FormsModule,ReactiveFormsModule} from '@angular/forms';
 
-
-import {FormGroup,FormControl,Validators,FormArray} from '@angular/forms';
+import { IMultiSelectOption, IMultiSelectSettings, IMultiSelectTexts } from 'ngx-bootstrap-multiselect';
 
 @Component({
   selector: 'app-query-configuration',
@@ -32,14 +33,61 @@ export class QueryConfigurationComponent implements OnInit {
   selecteddata:any[]=[];
   selectall:boolean=false;
 
-  constructor() {}
+  optionsModel: number[] = [];
+
+  // Settings configuration
+  mySettings: IMultiSelectSettings = {
+    enableSearch: false,
+    buttonClasses: 'btn w-100 text-left border',
+    containerClasses:'d-block multi-select-option',
+    dynamicTitleMaxItems: 0,
+    displayAllSelectedText: true,
+    // showCheckAll:true,
+    showUncheckAll:true,
+    itemClasses:"check-control-uncheck"
+  };
+
+  // Text configuration
+  myTexts: IMultiSelectTexts = {
+    defaultTitle: 'James',
+    checked: 'Role',
+    checkedPlural: 'Roles',
+    allSelected: 'All Roles Selected',
+    checkAll: 'Select all',
+    uncheckAll: 'UnSelect all x',
+  };
+  // Labels / Parents
+  myOptions: IMultiSelectOption[] = [
+    { id: 1, name: 'Car brands', isLabel: true },
+    { id: 2, name: 'Volvo', parentId: 1 },
+    { id: 3, name: 'Honda', parentId: 1 },
+    { id: 4, name: 'BMW', parentId: 1 },
+    { id: 5, name: 'Colors', isLabel: true },
+    { id: 6, name: 'Blue', parentId: 5 },
+    { id: 7, name: 'Red', parentId: 5 },
+    { id: 8, name: 'White', parentId: 5 }
+  ];
+
+  constructor(private fb: FormBuilder) {}
    
-  
+
+  queryConfig!: FormGroup;
 
   ngOnInit(): void {
    this.onFindSelectedList();
+
+    this.queryConfig = this.fb.group({
+      qtest: ['', Validators.required]
+    });
+
   }  
+
+
+  onChange() {
+      console.log(this.optionsModel);
+  }
   
+  // =================
   onSelect(item:any){
   this.data.filter(selectCheckbox=>{
       if(selectCheckbox.label===item.label){
@@ -49,9 +97,9 @@ export class QueryConfigurationComponent implements OnInit {
     this.onFindSelectedList();
   }
 
-  // Select/Unselect All checkboxes and ClearAll
+  // Select/Unselect All checkboxes and ClearAll ===========
   
-  toogleSelect(event:any){
+  toogleSelect(event:boolean){
     if(event){
       this.data.filter(toogleCheckbox=>{
         toogleCheckbox.selected = true;
@@ -64,7 +112,7 @@ export class QueryConfigurationComponent implements OnInit {
     this.onFindSelectedList();
   }
 
-  // Selected item count
+  // Selected item count ==============
   onFindSelectedList(){
     this.selecteddata=[];
     this.data.forEach(checklist=>{
@@ -74,5 +122,6 @@ export class QueryConfigurationComponent implements OnInit {
     });
     this.selectall= (this.data.length === this.selecteddata.length) ? true:false;
   }
+
   
 }

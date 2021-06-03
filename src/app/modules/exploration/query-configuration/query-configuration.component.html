@@ -4,12 +4,42 @@
             <div class="col-md-12">
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
                     laboreet<br> magna aliqua. Ut enim ad minim veniam</p>
-                <h5>Built Select Clause </h5>
             </div>
         </div>
 
         
+    <!-- <form [formGroup]="queryconfig">
+        <div class="row">
+            <div class="col-md-4">
+                <label for="test" class="form-label">User Name</label>
+                <input type="text" class="form-control" formcontrolname="qtest"  >
+            </div>
+        </div>
+    </form> -->
 
+    <form [formGroup]="queryConfig" class="build-where">
+        <div class="row mb-2">
+            <div class="col-md-12">
+                <h5>Built Where Clause </h5>
+            </div>
+            <div class="col-md-4">
+                <label for="test" class="form-label">User Name</label>
+                <ngx-bootstrap-multiselect 
+                    [options]="myOptions" 
+                    [texts]="myTexts" 
+                    [settings]="mySettings" 
+                    [(ngModel)]="optionsModel"
+                    formControlName="qtest">
+                </ngx-bootstrap-multiselect>
+            </div>
+        </div>
+    </form>
+        
+        <div class="row mt-2">
+            <div class="col-md-12">                
+                <h5>Built Select Clause </h5>
+            </div>
+        </div>
         <div class="row">
             <div class="col-md-12 slected-checkbox">
                 <div *ngFor="let item of data" class="float-left"> 
