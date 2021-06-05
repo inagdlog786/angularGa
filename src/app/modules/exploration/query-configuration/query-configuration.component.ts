@@ -13,7 +13,7 @@ export class QueryConfigurationComponent implements OnInit {
 
   viewAll=true;
   data=[
-    {label:'Bike',value:'bike',selected:true},
+    {label:'BikebikebikebikebikebikebikeBikebikebikebikebikebikebike',value:'bikebikebikebikebikebikebike',selected:true},
     {label:'Car',value:'Car',selected:false},
     {label:'Cycle',value:'Cycle',selected:false},
     {label:'Bike1',value:'Bike1',selected:false},

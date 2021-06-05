@@ -39,8 +39,28 @@
         }
     .view-checkboxes{
         border: 1px #dedddd solid;
+        
         .chklist{
             margin-right: 3px;
+        }
+        span{ 
+            &.w10{
+                width: 10%;
+            }
+            &.w90{
+                width: 90%;
+            }
+            label{
+                // word-break: break-word;
+                text-overflow: ellipsis;
+                width: 90%;
+
+                /* Required for text-overflow to do anything */
+                white-space: nowrap;
+                overflow: hidden;
+
+                margin-bottom: 0;
+            }
         }
     }
     .view-limit-data{
