@@ -88,10 +88,10 @@
          
         <div class="view-checkboxes p-3 mt-2 mb-3">
             <div>
-                <input type="checkbox" id="selectall" [(ngModel)]="selectall" (ngModelChange)="toogleSelect($event)" class="float-left"/> 
+                <input type="checkbox" id="selectall" [(ngModel)]="selectall" (ngModelChange)="toogleSelect($event)"/> 
                 <label for="selectall" class="pl-1"> {{selectall ? 'UnSelect':'Select'}} all</label>
             </div>
-            <div  class="row d-block clearfix">
+            <div  class="row d-block clearfix all-checkboxes">
                 <div [ngClass]="viewAll ? 'view-limit-data':'viewall-data'">
                     <div *ngFor="let item of data; let i=index;" class="float-left col-md-3" >
                         <span class="float-left w10">
