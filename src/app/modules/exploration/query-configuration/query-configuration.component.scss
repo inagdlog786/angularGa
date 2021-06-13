@@ -119,4 +119,40 @@
             }
         }
     }
+
+    .flex-form{
+        display: flex;
+        div{            
+            width: 26%;
+            margin-right: 1%;
+            margin-bottom: 1rem;
+            &.add-del{
+                width: 55px;
+                margin-right: 0%;
+            }
+        }
+    }
+
+    @media screen and (max-width: 767px) {        
+
+        .flex-form{
+            display: block;
+            div{            
+                width: 100%;
+                margin-right: 0%;
+                &.add-del{
+                    width: 55px;
+                    margin-right: 0%;
+                }
+            }
+        }
+
+    }
+
+    .w-22{
+        width: 22%;
+    }
+    .w55px{
+        width: 55px;
+    }
 }
