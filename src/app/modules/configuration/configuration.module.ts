@@ -14,7 +14,10 @@ import { AdminApplicationConfigurationsComponent } from './admin-application-con
 import { UserConfigurationsComponent } from './user-configurations/user-configurations.component';
 
 import { NgxBootstrapMultiselectModule } from 'ngx-bootstrap-multiselect';
+
 import { TimepickerModule } from 'ngx-bootstrap/timepicker';
+import { BsDatepickerModule } from 'ngx-bootstrap/datepicker';
+
 import { FormsModule, FormBuilder } from '@angular/forms'; 
 import { ReactiveFormsModule } from '@angular/forms';
 
@@ -42,6 +45,9 @@ import { CreateNewplanComponent } from './create-newplan/create-newplan.componen
       ConfigurationRoutingModule,    
       TabsModule.forRoot(),  
       TimepickerModule.forRoot(),
+      
+      BsDatepickerModule.forRoot(),
+      
       NgxBootstrapMultiselectModule ,
 
       NgMultiSelectDropDownModule.forRoot(),

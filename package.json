@@ -26,6 +26,7 @@
     "angular-svg-icon": "^11.1.2",
     "bootstrap": "^4.6.0",
     "bootstrap-input-spinner": "^2.0.9",
+    "datepicker": "0.0.0",
     "ng-multiselect-dropdown": "^0.3.4",
     "ngx-bootstrap": "^6.2.0",
     "ngx-bootstrap-multiselect": "^2.1.1",
@@ -35,6 +36,7 @@
     "ngx-show-hide-password": "^2.3.0",
     "ngx-spinner": "^11.0.1",
     "rxjs": "~6.6.0",
+    "timepicker": "^1.13.18",
     "tslib": "^2.0.0",
     "zone.js": "~0.11.3"
   },

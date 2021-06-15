@@ -133,6 +133,17 @@
         }
     }
 
+    select{
+        &.select-custom{
+            option{
+                &:hover,&:focus{
+                    border: 1px red solid;
+                    background: red;
+                }
+            }
+        }
+    }
+
     @media screen and (max-width: 767px) {        
 
         .flex-form{

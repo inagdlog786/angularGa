@@ -1,6 +1,8 @@
 /* You can add global styles to this file, and also import other style files */
 /* You can add global styles to this file, and also import other style files */
 // _base.sass
+
+@import url('./bs-datepicker.css');
 @import url('https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap');
 $body-font: 'Fira Sans', sans-serif;
 $input-font-color:#353535;
