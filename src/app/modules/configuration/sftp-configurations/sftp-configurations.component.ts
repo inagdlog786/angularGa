@@ -12,6 +12,8 @@ export class SftpConfigurationsComponent implements OnInit {
 
 
   savespinner = 'ssp';
+  
+  bsValue = new Date();
 
   fieldTextType!: boolean;
   toggleFieldTextType() {

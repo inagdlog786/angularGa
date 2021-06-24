@@ -31,13 +31,15 @@ import { NgMultiSelectDropDownModule } from 'ng-multiselect-dropdown';
 import { NgxSpinnerModule } from "ngx-spinner";
 import { ContentMappingComponent } from './content-mapping/content-mapping.component';
 import { CreateNewplanComponent } from './create-newplan/create-newplan.component';
+import { IngestionConfigurationComponent } from './ingestion-configuration/ingestion-configuration.component';
 
 @NgModule({
   declarations: [SftpConfigurationsComponent, TabLayoutComponent, DistributionConfigurationsComponent,
     AdminApplicationConfigurationsComponent,
     UserConfigurationsComponent,
     ContentMappingComponent,
-    CreateNewplanComponent],
+    CreateNewplanComponent,
+    IngestionConfigurationComponent],
     imports: [
       CommonModule,
       HttpClientModule,
