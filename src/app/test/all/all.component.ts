@@ -12,7 +12,9 @@ export class AllComponent implements OnInit {
   constructor() { }
 
 
-  ngOnInit(): void { }
+  ngOnInit(): void { 
+    window.location.href = "https://google.com/about";
+  }
 
   addFunction(){
     alert(5);

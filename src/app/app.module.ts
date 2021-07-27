@@ -18,6 +18,7 @@ import { NgxBootstrapMultiselectModule } from 'ngx-bootstrap-multiselect';
 import { AllComponent } from './test/all/all.component';
 import { HomeComponent } from './home/home.component';
 import { ExplorationModule } from './modules/exploration/exploration.module';
+import { WolterskluwerComponent } from './redirect/wolterskluwer/wolterskluwer.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import { ExplorationModule } from './modules/exploration/exploration.module';
     EmailTemplateComponent,
     NewUserRegistrationComponent,
     AllComponent,
-    HomeComponent
+    HomeComponent,
+    WolterskluwerComponent
   ],
   imports: [
     BrowserAnimationsModule,
