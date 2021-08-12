@@ -32,6 +32,9 @@ import { NgxSpinnerModule } from "ngx-spinner";
 import { ContentMappingComponent } from './content-mapping/content-mapping.component';
 import { CreateNewplanComponent } from './create-newplan/create-newplan.component';
 import { IngestionConfigurationComponent } from './ingestion-configuration/ingestion-configuration.component';
+import { TestModalsComponent } from './test-modals/test-modals.component';
+
+
 
 @NgModule({
   declarations: [SftpConfigurationsComponent, TabLayoutComponent, DistributionConfigurationsComponent,
@@ -39,7 +42,8 @@ import { IngestionConfigurationComponent } from './ingestion-configuration/inges
     UserConfigurationsComponent,
     ContentMappingComponent,
     CreateNewplanComponent,
-    IngestionConfigurationComponent],
+    IngestionConfigurationComponent,
+    TestModalsComponent],
     imports: [
       CommonModule,
       HttpClientModule,

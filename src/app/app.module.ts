@@ -14,6 +14,8 @@ import { EmailTemplateComponent } from './email-template/email-template.componen
 import { ShowHidePasswordModule } from 'ngx-show-hide-password';
 import { NewUserRegistrationComponent } from './new-user-registration/new-user-registration.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { ModalModule } from 'ngx-bootstrap/modal';
+
 import { NgxBootstrapMultiselectModule } from 'ngx-bootstrap-multiselect';
 import { AllComponent } from './test/all/all.component';
 import { HomeComponent } from './home/home.component';
@@ -43,7 +45,8 @@ import { WolterskluwerComponent } from './redirect/wolterskluwer/wolterskluwer.c
     NgxBootstrapMultiselectModule,
     FormsModule,
     ReactiveFormsModule,
-    ExplorationModule
+    ExplorationModule,
+    ModalModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]
