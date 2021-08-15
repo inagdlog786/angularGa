@@ -11,10 +11,10 @@ import { ErrorModalsComponent } from './error-modals/error-modals.component';
 })
 export class ModalsComponent implements OnInit {
 
-  modalRef?: BsModalRef;
+  modalRef!: BsModalRef;
   constructor(private modalService: BsModalService) {}
 
-  openModal() {
+  openModalOld() {
     this.modalRef = this.modalService.show(SuccessfullModalsComponent,  {
       initialState: {
         title: 'Modal Success',
@@ -22,6 +22,21 @@ export class ModalsComponent implements OnInit {
       }
     });
   }
+  openModal() {
+    this.modalRef = this.modalService.show(SuccessfullModalsComponent,  {
+      initialState: {
+        title: 'Modal Success',
+       // data: {}
+      }
+    });
+
+    setTimeout(() => {
+      this.modalRef.hide();
+   }, 3000)
+
+  }
+
+  
 
   errorModal() {
     this.modalRef = this.modalService.show(ErrorModalsComponent,  {
