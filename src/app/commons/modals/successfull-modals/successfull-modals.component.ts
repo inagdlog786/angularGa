@@ -9,6 +9,8 @@ import { BsModalRef } from 'ngx-bootstrap/modal';
 export class SuccessfullModalsComponent implements OnInit {
 
   title: any;
+  testcontent: any;
+  Imagepath: any;
   constructor(
     public modalRef: BsModalRef
   ) { }

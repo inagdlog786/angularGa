@@ -26,6 +26,8 @@ export class ModalsComponent implements OnInit {
     this.modalRef = this.modalService.show(SuccessfullModalsComponent,  {
       initialState: {
         title: 'Modal Success',
+        testcontent:'Test Fail',
+        Imagepath:'../../../../assets/images/Logo.png'
        // data: {}
       }
     });
