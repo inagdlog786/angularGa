@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Directive, Input, TemplateRef, ViewContainerRef } from '@angular/core';
 import { BsModalRef } from 'ngx-bootstrap/modal';
 
 @Component({
@@ -9,6 +10,11 @@ import { BsModalRef } from 'ngx-bootstrap/modal';
 export class ErrorModalsComponent implements OnInit {
 
   title: any;
+
+  @Input()
+  headerTemplate!: TemplateRef<any>;
+  
+
   constructor(
     public modalRef: BsModalRef
   ) { }

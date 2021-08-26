@@ -1,0 +1,22 @@
+.customTooltip{
+
+    *{pointer-events: auto;}
+
+.tooltip[_nghost-miw-c57]{pointer-events: all !important}
+
+.fixedScroll{
+    padding:3px;
+    ul{
+        height: 100px;
+        overflow-y: scroll;
+        margin: 0;
+        padding:0 5px;
+        text-align: left;
+        li{
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+    }
+}
+}

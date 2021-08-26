@@ -22,6 +22,9 @@ import { HomeComponent } from './home/home.component';
 import { ExplorationModule } from './modules/exploration/exploration.module';
 import { WolterskluwerComponent } from './redirect/wolterskluwer/wolterskluwer.component';
 
+import { TooltipModule } from 'ngx-bootstrap/tooltip';
+import { TooltipComponent } from './allc/tooltip/tooltip.component';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -34,7 +37,8 @@ import { WolterskluwerComponent } from './redirect/wolterskluwer/wolterskluwer.c
     NewUserRegistrationComponent,
     AllComponent,
     HomeComponent,
-    WolterskluwerComponent
+    WolterskluwerComponent,
+    TooltipComponent
   ],
   imports: [
     BrowserAnimationsModule,
@@ -46,7 +50,8 @@ import { WolterskluwerComponent } from './redirect/wolterskluwer/wolterskluwer.c
     FormsModule,
     ReactiveFormsModule,
     ExplorationModule,
-    ModalModule.forRoot()
+    ModalModule.forRoot(),
+    TooltipModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]

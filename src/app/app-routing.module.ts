@@ -9,6 +9,7 @@ import { HomeComponent } from './home/home.component';
 import { WolterskluwerComponent } from './redirect/wolterskluwer/wolterskluwer.component';
 import { ModalsComponent } from './commons/modals/modals.component';
 import { SuccessfullModalsComponent } from './commons/modals/successfull-modals/successfull-modals.component';
+import { TooltipComponent } from './allc/tooltip/tooltip.component';
 
 const routes: Routes = [
   // { path: '', component: WolterskluwerComponent, pathMatch:'full' },
@@ -19,6 +20,7 @@ const routes: Routes = [
   { path: 'home', component: HomeComponent },
   { path: 'test', component: AllComponent },  
   { path: '', component: ModalsComponent }, 
+  { path: 'tooltip', component: TooltipComponent}
  // { path: '', component: SuccessfullModalsComponent }, 
   // { path: 'modules/exploration', loadChildren: () => import('./modules/exploration/exploration.module').then(m => m.ExplorationModule) }
 ];

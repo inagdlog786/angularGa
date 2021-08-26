@@ -9,15 +9,34 @@
 </div> -->
 
 
+
     <div class="modal-header">
       <h4 class="modal-title pull-left">{{ title }} </h4>
       <button type="button" class="close pull-right" aria-label="Close" (click)="modalRef.hide()">
         <span aria-hidden="true">&times;</span>
       </button>
     </div>
-    <div class="modal-body">
-      {{testcontent}}
-      <img src="{{Imagepath}}" width="80%" alt=""/>
-      This is a modal.
+    <div *ngIf='isSuccessFullCall; else templateref'>
+      <div class="modal-body">
+        {{testcontent}}
+        <img src="{{Imagepath}}" width="80%" alt=""/>
+        This is a modal.
+      </div>
     </div>
+
+    <ng-template #templateref>
+      <p> Say Hello</p>
+    </ng-template>
+
+    <button (click)="changeFlag()"></button>
+
+    <div *ngIf="flag; then div1 else div2"></div>
+
+<ng-template #div1>
+  Dive One 
+</ng-template>
+<ng-template #div2>
+  Dive Two 
+</ng-template>
+
 

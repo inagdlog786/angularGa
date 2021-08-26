@@ -2,6 +2,7 @@ import { Component, OnInit, TemplateRef } from '@angular/core';
 import { BsModalRef, BsModalService } from 'ngx-bootstrap/modal';
 import { SuccessfullModalsComponent } from './successfull-modals/successfull-modals.component';
 import { ErrorModalsComponent } from './error-modals/error-modals.component';
+import { Observable } from 'rxjs';
 
 
 @Component({
@@ -23,18 +24,33 @@ export class ModalsComponent implements OnInit {
     });
   }
   openModal() {
-    this.modalRef = this.modalService.show(SuccessfullModalsComponent,  {
-      initialState: {
-        title: 'Modal Success',
-        testcontent:'Test Fail',
-        Imagepath:'../../../../assets/images/Logo.png'
-       // data: {}
-      }
-    });
+    console.log('Login');
 
-    setTimeout(() => {
-      this.modalRef.hide();
-   }, 3000)
+    const initialState = {
+      list: [
+        'Open a modal with component',
+        'Pass your data',
+        'Do something else',
+        '...'
+      ],
+      title: 'Modal with component'
+    };
+    this.modalRef = this.modalService.show(SuccessfullModalsComponent, {initialState});
+    this.modalRef.content.closeBtnName = 'Close';
+  // }
+    
+  //   this.modalRef = this.modalService.show(SuccessfullModalsComponent,  {
+  //     initialState: {
+  //       title: 'Modal Success',
+  //       testcontent:'Test Fail',
+  //       Imagepath:'../../../../assets/images/Logo.png'
+  //      // data: {}
+  //     }
+  //   });
+
+  //   setTimeout(() => {
+  //     this.modalRef.hide();
+  //  }, 30000)
 
   }
 
@@ -49,6 +65,8 @@ export class ModalsComponent implements OnInit {
     });
   }
   
+
+ 
   
   // modalRef?: BsModalRef;
 

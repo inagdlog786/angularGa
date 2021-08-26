@@ -1,0 +1,79 @@
+<div class="customTooltip">
+<div class="container james">
+    <p>tooltip works!</p>
+
+    
+    <button type="button" class="btn btn-success"
+            [tooltip]="customTooltip" triggers="click" containerClass="myTooltip">
+    Show me tooltip with html
+    </button>
+
+    <ng-template #customTooltip>  
+        <div  class="fixedScroll">    
+            <ul>
+                <li>Test 01</li>
+                <li>Test 02</li>
+                <li>Test 03</li>
+                <li>Test 04</li>
+                <li>Test 05</li>
+                <li>Test 06</li>
+                <li>Test 07</li>
+                <li>Test 08</li>
+            </ul>
+        </div>
+            <!-- <div  class="fixedScroll" [innerHtml]="tooltipInnerHtml"></div>     -->
+    </ng-template>
+
+    <ng-template #jamesTooltip>  
+        <div  class="fixedScroll">    
+            <ul>
+                <li>Test 01</li>
+                <li>Test 02</li>
+                <li>Test 03</li>
+                <li>Test 04</li>
+                <li>Test 05</li>
+                <li>Test 06</li>
+                <li>Test 07</li>
+                <li>Test 08</li>
+            </ul>
+        </div>
+            <!-- <div  class="fixedScroll" [innerHtml]="tooltipInnerHtml"></div>     -->
+    </ng-template>
+
+    <br/><br/>
+
+    <table class="table table-striped">
+        <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">First</th>
+            <th scope="col">Last</th>
+            <th scope="col">Handle</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">1</th>
+            <td>
+                <span [tooltip]="customTooltip" triggers="mouseenter:click" >  Mark </span>
+            </td>
+            <td><button type="button" [tooltip]="customTooltip" class="btn-link">James</button></td>
+            <td>@mdo</td>
+          </tr>
+          <tr>
+            <th scope="row">2</th>
+            <td>Jacob</td>
+            <td>Thornton</td>
+            <td>@fat</td>
+          </tr>
+          <tr>
+            <th scope="row">3</th>
+            <td>Larry</td>
+            <td>the Bird</td>
+            <td>@twitter</td>
+          </tr>
+        </tbody>
+      </table>
+
+</div>
+</div>

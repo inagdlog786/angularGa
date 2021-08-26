@@ -15,6 +15,15 @@ export class SuccessfullModalsComponent implements OnInit {
     public modalRef: BsModalRef
   ) { }
 
-  ngOnInit(): void {  }
+  
+  changeFlag(){
+    let flag=true;  
+    console.log(flag, '5555');
+    flag = !flag;
+  }
+
+  ngOnInit(): void {  
+    this.changeFlag();
+  }
 
 }

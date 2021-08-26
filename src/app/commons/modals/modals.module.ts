@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { BrowserModule } from '@angular/platform-browser';
 import { ModalsComponent } from './modals.component';
 
 import { ModalModule, BsModalService } from 'ngx-bootstrap/modal';
@@ -17,6 +18,7 @@ import { ErrorModalsComponent } from './error-modals/error-modals.component';
   ],
   providers: [BsModalService] ,
   bootstrap: [AppComponent],
-  entryComponents:[LoginComponent]
+  entryComponents:[SuccessfullModalsComponent]
 })
-export class ModalsModule { }
+export class ModalsModule {
+ }
