@@ -24,6 +24,9 @@ import { WolterskluwerComponent } from './redirect/wolterskluwer/wolterskluwer.c
 
 import { TooltipModule } from 'ngx-bootstrap/tooltip';
 import { TooltipComponent } from './allc/tooltip/tooltip.component';
+import { DuallistComponent } from './allc/duallist/duallist.component';
+
+import { AngularDualListBoxModule } from 'angular-dual-listbox';
 
 @NgModule({
   declarations: [
@@ -38,7 +41,8 @@ import { TooltipComponent } from './allc/tooltip/tooltip.component';
     AllComponent,
     HomeComponent,
     WolterskluwerComponent,
-    TooltipComponent
+    TooltipComponent,
+    DuallistComponent
   ],
   imports: [
     BrowserAnimationsModule,
@@ -51,7 +55,9 @@ import { TooltipComponent } from './allc/tooltip/tooltip.component';
     ReactiveFormsModule,
     ExplorationModule,
     ModalModule.forRoot(),
-    TooltipModule.forRoot()
+    TooltipModule.forRoot(),
+
+    AngularDualListBoxModule 
   ],
   providers: [],
   bootstrap: [AppComponent]

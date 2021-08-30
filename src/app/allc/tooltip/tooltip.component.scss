@@ -1,3 +1,4 @@
+$paramount-color:#007bff;
 .customTooltip{
 
     *{pointer-events: auto;}
@@ -18,5 +19,41 @@
             padding: 0;
         }
     }
-}
+  }
+  .dropdown-fixedheight{
+      height: 100px;
+      overflow-y: scroll;
+      
+        &::-webkit-scrollbar {
+            width: 3px;
+        }
+        &::-webkit-scrollbar-track {
+            background: #f1f1f1; 
+        }
+        &::-webkit-scrollbar-thumb {
+            background: $paramount-color; 
+        }
+        &::-webkit-scrollbar-thumb:hover {
+            background: $paramount-color; 
+            cursor: pointer;
+        }
+        .list-group-item{
+            border: none;
+        }
+    
+  }
+
+  .dropdownHover{display: inline-block;}
+  .dropdownHover:hover .dropdown-menu {
+    display: block;
+    margin-top: 0; // remove the gap so it doesn't close
+ }
+
+ .tableNoborder{
+     border: 1px red solid;
+     tr,th,td{
+         border: none;
+     }
+ }
+
 }

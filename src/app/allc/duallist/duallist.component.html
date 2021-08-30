@@ -1,0 +1,36 @@
+<div class="container dualContainer">
+
+    <div class="row">
+        <div class="col-md-4">
+            <ul>
+                <li 
+                  *ngFor="let item of list1" 
+                  [class.item-selected]="item.selected"
+                  (click)="toggleSelection(item, 1)">{{item.text}}</li>
+              </ul>
+        </div>
+    
+        <div class="col-md-2 text-center">
+            <button kendoButton (click)="moveSelected('right')" class="btn btn-primary d-block w-100">
+                > Add
+            </button>
+            <button kendoButton (click)="moveAll('right')" class="btn btn-primary d-block w-100 my-2">
+                >> Move All
+            </button>
+            <button kendoButton (click)="moveSelected('left')"  class="btn btn-primary d-block w-100">
+                < Remove
+            </button>
+            <button kendoButton (click)="moveAll('left')"  class="btn btn-primary d-block w-100 my-2">
+                << Move All
+            </button>
+        </div>
+        <div class="col-md-4">
+            <ul>
+            <li *ngFor="let item of list2" 
+                [class.item-selected]="item.selected"
+                (click)="toggleSelection(item, 2)">{{item.text}}</li>
+            </ul>
+        </div>
+        
+    </div>
+  </div>

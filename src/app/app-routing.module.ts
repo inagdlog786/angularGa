@@ -10,6 +10,7 @@ import { WolterskluwerComponent } from './redirect/wolterskluwer/wolterskluwer.c
 import { ModalsComponent } from './commons/modals/modals.component';
 import { SuccessfullModalsComponent } from './commons/modals/successfull-modals/successfull-modals.component';
 import { TooltipComponent } from './allc/tooltip/tooltip.component';
+import { DuallistComponent } from './allc/duallist/duallist.component';
 
 const routes: Routes = [
   // { path: '', component: WolterskluwerComponent, pathMatch:'full' },
@@ -20,7 +21,8 @@ const routes: Routes = [
   { path: 'home', component: HomeComponent },
   { path: 'test', component: AllComponent },  
   { path: '', component: ModalsComponent }, 
-  { path: 'tooltip', component: TooltipComponent}
+  { path: 'tooltip', component: TooltipComponent},
+  { path: 'dual', component: DuallistComponent}
  // { path: '', component: SuccessfullModalsComponent }, 
   // { path: 'modules/exploration', loadChildren: () => import('./modules/exploration/exploration.module').then(m => m.ExplorationModule) }
 ];
