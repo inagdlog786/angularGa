@@ -53,6 +53,8 @@ export class DuallistComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+    this.list1 = [...this.list1, ...this.list2];
+    this.list2 = [];
   }
 
 }
