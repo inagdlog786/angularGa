@@ -56,4 +56,65 @@ $paramount-color:#007bff;
      }
  }
 
+
+.openSelectOuter{
+    position:relative;
+ .openMultiselect{
+     overflow:hidden;
+
+     .view-checkboxes{
+        border: 1px #dedddd solid;
+        position: absolute;
+        background-color: #fff;
+        max-width:100%;
+        .chklist{
+            margin-right: 3px;
+        }
+        .all-checkboxes{
+            span{ 
+                &.w10{
+                    width: 10%;
+                }
+                &.w90{
+                    width: 90%;
+                }
+                label{
+                    // word-break: break-word;
+                    text-overflow: ellipsis;
+                    width: 90%;
+    
+                    /* Required for text-overflow to do anything */
+                    white-space: nowrap;
+                    overflow: hidden;
+    
+                    margin-bottom: 0;
+                }
+            }
+        }
+
+        .view-limit-data{
+            display: block;        
+            overflow-y:scroll;
+    
+                height: 100px;
+                &::-webkit-scrollbar {
+                    width: 4px;
+                }
+                &::-webkit-scrollbar-track {
+                    background: #f1f1f1; 
+                }
+                &::-webkit-scrollbar-thumb {
+                    background: #007bff; 
+                }
+                &::-webkit-scrollbar-thumb:hover {
+                    background: #007bff; 
+                    cursor: pointer;
+                }
+    
+        }
+        
+    }
+ }
+
+}
 }
