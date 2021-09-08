@@ -27,6 +27,7 @@ import { TooltipComponent } from './allc/tooltip/tooltip.component';
 import { DuallistComponent } from './allc/duallist/duallist.component';
 
 import { AngularDualListBoxModule } from 'angular-dual-listbox';
+import { TypeaheadModule } from 'ngx-bootstrap/typeahead';
 
 @NgModule({
   declarations: [
@@ -56,6 +57,7 @@ import { AngularDualListBoxModule } from 'angular-dual-listbox';
     ExplorationModule,
     ModalModule.forRoot(),
     TooltipModule.forRoot(),
+    TypeaheadModule.forRoot(),
 
     AngularDualListBoxModule 
   ],

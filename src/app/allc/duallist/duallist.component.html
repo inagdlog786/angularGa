@@ -1,6 +1,45 @@
 <div class="container dualContainer">
 
+
     <div class="row">
+        <div class="col-md-12">
+            <pre class="card card-block card-header mb-3">Model: {{selected | json}}</pre>
+
+            <div class="input-group">
+                <input [(ngModel)]="selected"
+       [typeahead]="mySearchCreteria"
+       [optionsListTemplate]="mySearchCreteriaTemplate"
+       [typeaheadScrollable]="true"
+       [typeaheadOptionsInScrollableView]="5"
+       [adaptivePosition]="true"
+       class="form-control">
+       
+<ng-template #mySearchCreteriaTemplate let-matches="matches" let-query="query" let-typeaheadTemplateMethods>
+    <ul class="mySearchCreteriaList">
+      <li class="custom-list-group-item"
+          *ngFor="let match of matches"
+          [class.active]="typeaheadTemplateMethods.isActive(match)"
+          (click)="typeaheadTemplateMethods.selectMatch(match, $event)"
+          (mouseenter)="typeaheadTemplateMethods.selectActive(match)">
+        {{ match.item }}
+      </li>
+    </ul>
+  </ng-template>
+                <div class="input-group-append">
+                    <span class="input-group-text">Search</span>
+                  </div>
+            </div>
+
+
+
+
+ 
+        </div>
+    </div>
+
+    <br/>
+
+    <div class="row duallist">
         <div class="col-md-4">
             <ul>
                 <li 
