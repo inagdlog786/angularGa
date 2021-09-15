@@ -37,47 +37,19 @@
                                             <th width="200px">Staging Table Name </th>
                                         </tr>
                                     </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td>
-                                                <input type="radio" name="existing-mapping"/>
-                                            </td>
-                                            <td> Banking Feed</td>
-                                            <td>
-                                                <button type="button" class="btn btn-link p-0">View</button>
-                                            </td>
-                                        </tr>
 
-                                        <tr>
-                                            <td>
-                                                <input type="radio" name="existing-mapping"/>
-                                            </td>
-                                            <td> Banking Feed</td>
-                                            <td>
-                                                <button type="button" class="btn btn-link p-0">View</button>
-                                            </td>
-                                        </tr>
 
-                                        <tr>
-                                            <td>
-                                                <input type="radio" name="existing-mapping"/>
-                                            </td>
-                                            <td> Banking Feed</td>
-                                            <td>
-                                                <button type="button" class="btn btn-link p-0">View</button>
-                                            </td>
-                                        </tr>
+<tbody>
+    <tr *ngFor="let item of data">
+        <td [ngClass]="item.radio ===selected ? 'active' : 'inactive'">
+            <input type="radio" [value]="item.radio" [(ngModel)]="selected" #selectedRef="ngModel" name="selectedradio" id="{{item.radio}}" />
+        </td>
+        <td [ngClass]="item.radio ===selected ? 'active' : 'inactive'">{{item.MappingName}} -{{selected}} </td>
+        <td [ngClass]="item.radio ===selected ? 'active' : 'inactive'">{{item.stagingTableName}} </td>
+    </tr>
+</tbody>
 
-                                        <tr>
-                                            <td>
-                                                <input type="radio" name="existing-mapping"/>
-                                            </td>
-                                            <td> Banking Feed</td>
-                                            <td>
-                                                <button type="button" class="btn btn-link p-0">View</button>
-                                            </td>
-                                        </tr>
-                                    </tbody>
+                                  
                                 </table>
                             </div>
                         </div>

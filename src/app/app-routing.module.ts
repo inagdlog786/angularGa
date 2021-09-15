@@ -11,6 +11,7 @@ import { ModalsComponent } from './commons/modals/modals.component';
 import { SuccessfullModalsComponent } from './commons/modals/successfull-modals/successfull-modals.component';
 import { TooltipComponent } from './allc/tooltip/tooltip.component';
 import { DuallistComponent } from './allc/duallist/duallist.component';
+import { SortingtableComponent } from './allc/sortingtable/sortingtable.component';
 
 const routes: Routes = [
   // { path: '', component: WolterskluwerComponent, pathMatch:'full' },
@@ -22,7 +23,8 @@ const routes: Routes = [
   { path: 'test', component: AllComponent },  
   { path: '', component: ModalsComponent }, 
   { path: 'tooltip', component: TooltipComponent},
-  { path: 'dual', component: DuallistComponent}
+  { path: 'dual', component: DuallistComponent},
+  { path: 'sortingtable', component: SortingtableComponent}
  // { path: '', component: SuccessfullModalsComponent }, 
   // { path: 'modules/exploration', loadChildren: () => import('./modules/exploration/exploration.module').then(m => m.ExplorationModule) }
 ];

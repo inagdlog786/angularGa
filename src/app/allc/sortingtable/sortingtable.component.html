@@ -1,0 +1,47 @@
+<div class="sortingTable container">
+<!-- <table class="table table-hover">
+    <thead>
+      <tr>
+        <th *ngFor = 'let key of keys'>{{key}}</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor = 'let item of list_items'>
+            <td *ngFor = 'let key of keys'>{{key}}</td>
+        </tr>
+    </tbody>
+</table> -->
+
+
+<div class="table-responsive table-head-fixed mt-2">
+  <table class="table table-striped table-bordered dataSourceTable table-fixed">
+    <thead>
+      <tr>
+        <th width="10px"></th>
+        <th>Mapping Name</th>
+        <th width="200px">Staging Table Name </th>
+      </tr>
+    </thead>
+
+
+    <tbody>
+      <tr *ngFor="let item of listItems">
+        <td [ngClass]="item.radio ===selectedItem ? 'active' : 'inactive'">
+          <input type="radio" [value]="item.radio" [(ngModel)]="selectedItem" #selectedItemRef="ngModel"
+            name="selectedItemradio" id="{{item.radio}}" />
+        </td>
+        <td [ngClass]="item.radio ===selectedItem ? 'active' : 'inactive'">{{item.MappingName}} </td>
+        <td [ngClass]="item.radio ===selectedItem ? 'active' : 'inactive'">{{item.stagingTableName}} </td>
+      </tr>
+    </tbody>
+
+
+  </table>
+
+
+<!-- Sorting Table -->
+
+<!-- sortingTable Close -->
+
+
+</div>

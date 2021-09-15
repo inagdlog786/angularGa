@@ -28,6 +28,9 @@ import { DuallistComponent } from './allc/duallist/duallist.component';
 
 import { AngularDualListBoxModule } from 'angular-dual-listbox';
 import { TypeaheadModule } from 'ngx-bootstrap/typeahead';
+import { SortingtableComponent } from './allc/sortingtable/sortingtable.component';
+import { SortPipe } from './allc/pipe/sort.pipe';
+
 
 @NgModule({
   declarations: [
@@ -43,7 +46,9 @@ import { TypeaheadModule } from 'ngx-bootstrap/typeahead';
     HomeComponent,
     WolterskluwerComponent,
     TooltipComponent,
-    DuallistComponent
+    DuallistComponent,
+    SortingtableComponent,
+    SortPipe
   ],
   imports: [
     BrowserAnimationsModule,
@@ -59,7 +64,8 @@ import { TypeaheadModule } from 'ngx-bootstrap/typeahead';
     TooltipModule.forRoot(),
     TypeaheadModule.forRoot(),
 
-    AngularDualListBoxModule 
+    AngularDualListBoxModule,
+    
   ],
   providers: [],
   bootstrap: [AppComponent]
