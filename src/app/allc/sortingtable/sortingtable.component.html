@@ -18,14 +18,14 @@
     <thead>
       <tr>
         <th width="10px"></th>
-        <th>Mapping Name</th>
+        <th>Mapping Name </th>
         <th width="200px">Staging Table Name </th>
       </tr>
     </thead>
 
 
     <tbody>
-      <tr *ngFor="let item of listItems">
+      <tr *ngFor="let item of listItems | orderBy: order:reverse">
         <td [ngClass]="item.radio ===selectedItem ? 'active' : 'inactive'">
           <input type="radio" [value]="item.radio" [(ngModel)]="selectedItem" #selectedItemRef="ngModel"
             name="selectedItemradio" id="{{item.radio}}" />
@@ -40,6 +40,50 @@
 
 
 <!-- Sorting Table -->
+  
+<h1>ngx-order-pipe example</h1>
+
+<div>
+  <table>
+    <thead>
+      <tr>
+        <th [class.active]="order === 'id'"
+            (click)="setOrder('id')">
+
+          ID <span [hidden]="reverse">▼</span
+          ><span [hidden]="!reverse">▲</span>
+        </th>
+        <th [class.active]="order === 'info.name'"
+            (click)="setOrder('info.name')"
+            class="mdl-data-table__cell--non-numeric"
+        >
+          Name <span [hidden]="reverse">▼</span
+          ><span [hidden]="!reverse">▲</span>
+        </th>
+        <th [class.active]="order === 'info.number'"
+            (click)="setOrder('info.number')"
+        >
+          Phone number <span [hidden]="reverse">▼</span>
+          <span [hidden]="!reverse">▲</span>
+        </th>
+        <th [class.active]="order === 'info.age'"
+            (click)="setOrder('info.age')"
+        >
+          Age <span [hidden]="reverse">▼</span>
+          <span [hidden]="!reverse">▲</span>
+        </th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr *ngFor="let row of collection | orderBy: order:reverse">
+        <td>{{ row.id }}</td>
+        <td>{{ row.info.name }}</td>
+        <td>{{ row.info.number }}</td>
+        <td>{{ row.info.age }}</td>
+      </tr>
+      </tbody>
+    </table>
+  </div>
 
 <!-- sortingTable Close -->
 

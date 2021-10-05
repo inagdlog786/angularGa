@@ -30,11 +30,72 @@ export class SortingtableComponent implements OnInit {
   ]
   //
  
+  order: string = 'info.name';
+  reverse: boolean = false;
 
-  constructor() {         
+  collection= [
+    {
+      id: 1,
+      info: {
+        name: 'john',
+        number: '555-1212',
+        age: 10
+      }
+    }, {
+      id: 5,
+      info: {
+        name: 'Mary',
+        number: '555-9876',
+        age: 19
+      }
+    }, {
+      id: 2,
+      info: {
+        name: 'Mike',
+        number: '555-4321',
+        age: 21
+      }
+    }, {
+      id: 3,
+      info: {
+        name: 'Julie',
+        number: '555-8765',
+        age: 29
+      }
+    }, {
+      id: 4,
+      info: {
+        name: 'Adam',
+        number: '555-5678',
+        age: 35
+      }
+    },{
+      id: 6,
+      info: {
+        name: 'Zdam',
+        number: '555-5678',
+        age: 35
+      }
+    },
+  ];
+  sortedCollection!: any[];
+
+  constructor(private orderPipe: OrderPipe) {         
     for(this.i=0 ; this.i < this.list_items.length; this.i++){      
       console.log(Object.values(this.list_items[this.i]));       
     } 
+    // console.log(this.orderPipe.transform(this.array, this.order));
+    this.sortedCollection = orderPipe.transform(this.collection, 'info.name');
+    console.log(this.sortedCollection);
+  }
+
+
+  setOrder(value: string) {
+    if (this.order === value) {
+      this.reverse = !this.reverse;
+    }
+
+    this.order = value;
   }
 
 

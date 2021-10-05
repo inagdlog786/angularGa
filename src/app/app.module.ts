@@ -3,6 +3,9 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+
+import { OrderModule } from 'ngx-order-pipe';
+
 import { LoginComponent } from './login/login.component';
 import { HeaderComponent } from './commons/header/header.component';
 import { PageFooterComponent } from './commons/page-footer/page-footer.component';
@@ -53,6 +56,7 @@ import { SortPipe } from './allc/pipe/sort.pipe';
   imports: [
     BrowserAnimationsModule,
     BrowserModule,
+    OrderModule,
     AppRoutingModule,
     ConfigurationModule,
     ShowHidePasswordModule,
@@ -63,7 +67,6 @@ import { SortPipe } from './allc/pipe/sort.pipe';
     ModalModule.forRoot(),
     TooltipModule.forRoot(),
     TypeaheadModule.forRoot(),
-
     AngularDualListBoxModule,
     
   ],

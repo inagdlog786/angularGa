@@ -91,13 +91,22 @@ export class DuallistComponent implements OnInit {
         }
       });
       this.list2 = this.list2.filter(i => !i.selected);
+      
+      this.list1.forEach(x=>{
+        x.selected=false;
+      })
+
     } else {
       this.list1.forEach(item => {
         if (item.selected) {
+          // item.selected=false;
           this.list2.push(item);
         }
       });
       this.list1 = this.list1.filter(i => !i.selected);
+      this.list2.forEach(x=>{
+        x.selected=false;
+      })
     }
   }
   public moveAll(direction: string) {
@@ -105,10 +114,16 @@ export class DuallistComponent implements OnInit {
       this.list1 = [...this.list1, ...this.list2];
       this.list2 = [];
     } else {
+      this.list1.forEach(x=>{
+        x.selected=false;
+      })
       this.list2 = [...this.list2, ...this.list1];
       this.list1 = [];
     }
   }
+
+
+  
 
   constructor() { }
 
@@ -116,5 +131,22 @@ export class DuallistComponent implements OnInit {
     this.list1 = [...this.list1, ...this.list2];
     this.list2 = [];
   }
+
+  
+
+
+
+  OnselectAllList1(){
+    this.list1.forEach(x=>{
+      x.selected=true;
+    })
+  }
+  
+  OnselectAllList2(){
+    this.list2.forEach(x=>{
+      x.selected=true;
+    })
+  }
+  
 
 }

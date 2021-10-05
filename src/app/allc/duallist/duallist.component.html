@@ -38,6 +38,13 @@
     </div>
 
     <br/>
+<!-- 051021 -->
+
+<!-- 100521 -->
+
+
+
+    <br/>
 
     <div class="row duallist">
         <div class="col-md-4">
@@ -45,11 +52,18 @@
                 <li 
                   *ngFor="let item of list1" 
                   [class.item-selected]="item.selected"
-                  (click)="toggleSelection(item, 1)">{{item.text}}</li>
+                  (click)="toggleSelection(item, 1)">{{item.text}} - {{item.selected}}</li>
               </ul>
         </div>
     
         <div class="col-md-2 text-center">
+            
+            <button kendoButton (click)="OnselectAllList1();"  class="btn btn-primary d-block w-100 my-2">
+                Select All List 1
+            </button>            
+            <button kendoButton (click)="OnselectAllList2();"  class="btn btn-primary d-block w-100 my-2">
+                Select All List 2
+            </button>
             <button kendoButton (click)="moveSelected('right')" class="btn btn-primary d-block w-100">
                 > Add
             </button>
