@@ -1,0 +1,51 @@
+<div class="container-fluid">
+    <div class="card mt-5">
+        <div class="row p-2">
+            <div class="col-md-8 pl-4 pt-2">
+                <h5>Title</h5>
+            </div>
+            <div class="col-md-4 text-right">
+                <div class="btn-group me-2" role="group" aria-label="First group">
+                    <button type="button" class="btn btn-link" (click)="destinationEdit()">
+                        <i class="fa fa-edit"></i>
+                    </button>
+                    <button type="button" class="btn btn-link" (click)="destinationToogle()">                        
+<i class="fa"  [ngClass]="showForm ? 'fa-chevron-up' : 'fa-chevron-down'">  </i>
+                    </button>
+                  </div>
+            </div>
+        </div>
+        <div class="card-body" *ngIf="showForm">
+            <div class="table-responsive">
+                <table class="table destinationTabele">
+                    <tr>
+                        <th>Group Name</th>
+                        <th>Origin System Block</th>
+                        <th>Destination System Block</th>
+                        <th>SCAC</th>
+                        <th>Station 333</th>
+                        <th>State</th>
+                        <th>Operating Customer</th>
+                        <th>Action</th>
+                    </tr>
+                    <tr *ngFor="let item of destinationGroupRow; let i = index">
+                        <td><input type="text" disabled value="{{item.groupName}}"></td>
+                        <td><input type="text" value="{{item.osb}}"></td>
+                        <td><input type="text"></td>
+                        <td><input type="text" ></td>
+                        <td><input type="text" ></td>
+                        <td><input type="text"></td>
+                        <td><input type="text"></td>
+                        <td class="text-center"> <button (click) = "deletedestinationGroupRow(i)" class="btn btn-link text-danger p-0 m-0"><i class="fa fa-trash"></i></button></td>
+                    </tr>
+                </table>
+            </div>
+            <button (click)="addTable()" class="btn btn-light" data-bs-toggle="tooltip" title="Add Row"><i class="fa fa-plus"></i></button>
+            
+            <div class="text-right">
+                <button type="button" class="btn btn-primary">Save</button> &nbsp;
+                <button type="button" class="btn btn-secondary">Cancel</button>
+            </div>
+        </div>
+      </div>
+</div>
