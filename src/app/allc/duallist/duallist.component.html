@@ -21,22 +21,40 @@
                </div> -->
 
                <div class="accordion" id="accordionExample">
-                    <div class="card"  *ngFor="let item of selectedData; let i = index">
-                        <div class="card-header" [id]="'heading'+i">
-                        <h2 class="mb-0">
-                            <button class="btn btn-link btn-block text-left" type="button" [ngClass]="{ 'collapsed': i != 0 }" data-toggle="collapse" [attr.data-target]="'#collapse'+(i+1)" >
-                            Collapsible Group Item {{i+1}}
-                            </button>
-                        </h2>
-                        </div>
-                    
-                        <div [id]="'collapse'+(i+1)" class="collapse show" [ngClass]="{ 'show': i == 0 }" aria-labelledby="'heading'+ i" data-parent="#accordionExample">
-                        <div class="card-body">
-                                Collapse {{i+1}} :-  Some placeholder content for the first accordion panel. This panel is shown by default, thanks to the <code>.show</code> class.
-                        </div>
-                        </div>
+                <div class="card"  *ngFor="let item of selectedData; let i = index">
+                    <div class="card-header" [id]="'heading'+i">
+                    <h2 class="mb-0">
+                        <button class="btn btn-link btn-block text-left" type="button" [ngClass]="{ 'collapsed': i != 0 }" data-toggle="collapse" [attr.data-target]="'#collapse'+(i+1)" >
+                        Collapsible Group Item {{i+1}}
+                        </button>
+                    </h2>
+                    </div>
+                
+                    <div [id]="'collapse'+(i+1)" class="collapse show" [ngClass]="{ 'show': i == 0 }" aria-labelledby="'heading'+ i" data-parent="#accordionExample">
+                    <div class="card-body">
+                            Collapse {{i+1}} :-  Some placeholder content for the first accordion panel. This panel is shown by default, thanks to the <code>.show</code> class.
+                    </div>
                     </div>
                 </div>
+            </div>
+
+            <div class="accordion" id="accordionTwoExample">
+                <div class="card"  *ngFor="let item of selectedData; let i = index">
+                    <div class="card-header" [id]="'heading'+i">
+                    <h2 class="mb-0">
+                        <button class="btn btn-link btn-block text-left" type="button" [ngClass]="{ 'collapsed': i != 0 }" data-toggle="collapse" [attr.data-target]="'#collapseTwo'+(i+1)" >
+                        Collapsible Group Item {{i+1}}
+                        </button>
+                    </h2>
+                    </div>
+                
+                    <div [id]="'collapseTwo'+(i+1)" class="collapse show" [ngClass]="{ 'show': i == 0 }" aria-labelledby="'heading'+ i" data-parent="#accordionTwoExample">
+                    <div class="card-body">
+                            Collapse {{i+1}} :-  Some placeholder content for the first accordion panel. This panel is shown by default, thanks to the <code>.show</code> class.
+                    </div>
+                    </div>
+                </div>
+            </div>
 
         </div>
     </div>
